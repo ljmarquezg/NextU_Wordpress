@@ -1,0 +1,140 @@
+/*
+Theme Name: Shop Isle - Super Max 
+Template: shop-isle
+Description:  	Child theme de storefront para crear imágen de los supermercados Super Max 
+Version:      	1.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options
+*/
+
+/*MENU*/
+
+.navbar-header {
+    width: 120px;
+}
+
+.navbar-header img {
+    margin-top: 3px;
+}
+
+.navbar-nav .sub-menu,
+.navbar-nav .children {
+    width: 100%;
+}
+
+.navbar-custom .nav>li>a:focus,
+.navbar-custom .nav>li>a:hover,
+.navbar-custom .nav .open>a,
+.navbar-custom .nav .open>a:focus,
+.navbar-custom .nav .open>a:hover,
+.navbar-custom .sub-menu>li>a:focus,
+.navbar-custom .sub-menu>li>a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/*Headers*/
+
+.home-section h1 {
+    text-shadow: 0px 3px 5px black;
+}
+
+.module,
+.module-small {
+    background-position: top right;
+}
+
+.module-title::after {
+    height: 4px;
+    background-color: yellow;
+    width: 100px;
+    content: '';
+}
+
+.term-description {
+    margin: 30px auto 30px;
+}
+
+/*Botones*/
+
+.btn.btn-border-w {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: #faa918;
+    box-shadow: 0 2px 2px transparent;
+    transition: ease-in all 0.3s
+}
+
+.btn.btn-border-w:hover {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: #faa918;
+    box-shadow: 0 2px 2px black;
+    transition: ease-in all 0.3s
+}
+
+/*Sidebar*/
+
+.sidebar {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.sidebar-shop {
+    padding-top: 0 !important;
+}
+
+.yith-woocompare-widget ul li:before {
+    content: '';
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.yith-woocompare-widget .widget-title {
+    margin: 0;
+    padding: 0;
+}
+
+/*Products*/
+
+.woocommerce.single-product .price ins .amount,
+.woocommerce ul.products li.product .price ins .amount,
+.woocommerce ul.products li.product .price .amount {
+    font: 600 15px/1.8 "Open Sans", sans-serif !important;
+}
+
+.single-product .amount,
+.woocommerce.single-product .price ins .amount,
+.woocommerce ul.products li.product .price ins .amount,
+.woocommerce ul.products li.product .price .amount {
+    color: #faa918 !important;
+}
+
+a.button.compare,
+.shop-isle-compare-list-wrapper a.button.alt {
+    padding: 5px 10px;
+}
+
+.woocommerce.single-product .owl-carousel .ex-product .woocommerce-Price-amount,
+.woocommerce.single-product ul.products li.product .price del .amount,
+.woocommerce ul.products li.product .price del .amount {
+    color: #999 !important;
+    font: 400 12px/1.8 "Open Sans", sans-serif !important;
+}
+
+@media(min-width: 1024px) {
+    .module,
+    .module-small {
+        margin-top: 50px;
+    }
+    .sidebar {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .sidebar-shop {
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,202 @@
+2018-03-22T15:44:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-22T15:44:31+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-22T18:06:31+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T08:26:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T08:32:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T08:32:54+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T10:56:08+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T11:07:53+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T11:21:19+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T11:21:20+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T11:21:20+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-23T13:58:54+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_header_styles() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\header.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\archive-product.php(23): get_header('shop')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\taxonomy-product_cat.php(22): wc_get_template('archive-product...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\wordpres
+
+2018-03-23T13:59:03+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_header_styles() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\header.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\home.php(10): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-23T13:59:16+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_header_styles() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\header.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\home.php(10): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-23T13:59:29+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_header_styles() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\header.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\home.php(10): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-23T14:00:20+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_header_styles() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\header.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\home.php(10): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-23T14:00:34+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_header_styles() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\header.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\home.php(10): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-23T14:54:11+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_get_content_background_color() in C:\xampp\htdocs\wordpress\wp-content\plugins\storefront-sticky-add-to-cart\storefront-sticky-add-to-cart.php:215
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): Storefront_Sticky_Add_to_Cart->ssatc_script('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop
+
+2018-03-23T14:54:22+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_get_content_background_color() in C:\xampp\htdocs\wordpress\wp-content\plugins\storefront-sticky-add-to-cart\storefront-sticky-add-to-cart.php:215
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): Storefront_Sticky_Add_to_Cart->ssatc_script('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop
+
+2018-03-23T14:54:30+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_get_content_background_color() in C:\xampp\htdocs\wordpress\wp-content\plugins\storefront-sticky-add-to-cart\storefront-sticky-add-to-cart.php:215
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): Storefront_Sticky_Add_to_Cart->ssatc_script('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop
+
+2018-03-23T14:54:56+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_get_content_background_color() in C:\xampp\htdocs\wordpress\wp-content\plugins\storefront-sticky-add-to-cart\storefront-sticky-add-to-cart.php:215
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): Storefront_Sticky_Add_to_Cart->ssatc_script('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop
+
+2018-03-23T14:55:42+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_get_content_background_color() in C:\xampp\htdocs\wordpress\wp-content\plugins\storefront-sticky-add-to-cart\storefront-sticky-add-to-cart.php:215
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): Storefront_Sticky_Add_to_Cart->ssatc_script('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop
+
+2018-03-25T07:01:44+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-25T19:50:27+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-25T21:24:13+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-25T21:25:25+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+

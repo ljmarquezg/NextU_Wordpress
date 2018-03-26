@@ -1,0 +1,82 @@
+/*
+Theme Name: Storefront - Super Max 
+Template: storefront
+Author: Modified by Luis Marquez
+Description:  	Child theme de storefront para crear imágen de los supermercados Super Max 
+Version:      	1.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options
+*/
+
+/*MENU*/
+
+.navbar-header {
+    width: 120px;
+}
+
+.navbar-nav .sub-menu,
+.navbar-nav .children {
+    width: 100%;
+}
+
+.navbar-custom .nav>li>a:focus,
+.navbar-custom .nav>li>a:hover,
+.navbar-custom .nav .open>a,
+.navbar-custom .nav .open>a:focus,
+.navbar-custom .nav .open>a:hover,
+.navbar-custom .sub-menu>li>a:focus,
+.navbar-custom .sub-menu>li>a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/*Headers*/
+
+.home-section h1 {
+    text-shadow: 0px 3px 5px black;
+}
+
+.module,
+.module-small {
+    background-position: center right;
+}
+
+.module-title::after {
+    height: 4px;
+    background-color: yellow;
+    width: 100px;
+    content: '';
+}
+
+/*Botones*/
+
+.btn.btn-border-w {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: #faa918;
+    box-shadow: 0 2px 2px transparent;
+    transition: ease-in all 0.3s
+}
+
+.btn.btn-border-w:hover {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: black;
+    background-color: #faa918;
+    box-shadow: 0 2px 2px black;
+    transition: ease-in all 0.3s
+}
+
+.woocommerce ul.products li.product .price ins .amount,
+.woocommerce ul.products li.product {
+    font: 600 15px/1.8 "Open Sans", sans-serif;
+    color: #faa918;
+}
+
+@media(min-width: 1024px) {
+    .module,
+    .module-small {
+        margin-top: 50px;
+    }
+}
