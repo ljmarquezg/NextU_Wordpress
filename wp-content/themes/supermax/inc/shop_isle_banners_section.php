@@ -9,6 +9,6 @@
 		/* BANNERS */
 
 
-		echo do_shortcode("[wcps id='209']");
+		//echo do_shortcode("[wcps id='209']");
 		
 		/* END BANNERS */

@@ -35,7 +35,6 @@ if ( defined( 'WCCM_VERISON' ) ) {
 }
 
 /******  Banners Section */
-echo do_shortcode("[br_products_of_day]");
 $banners_section = get_template_directory() . '/inc/sections/shop_isle_banners_section.php';
 require_once( $banners_section );
 
@@ -51,9 +50,8 @@ require_once( $video );
 $products_slider = get_template_directory() . '/inc/sections/shop_isle_products_slider_section.php';
 require_once( $products_slider );
 
-echo do_shortcode("[wcps id='209']");
-
 echo do_shortcode( '[wpgmza id="1"]' );
+
 
 get_footer();
 

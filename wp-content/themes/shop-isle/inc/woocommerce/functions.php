@@ -704,3 +704,4 @@ function shop_isle_outofstock_notify_on_archives() {
 		}
 	}
 }
+

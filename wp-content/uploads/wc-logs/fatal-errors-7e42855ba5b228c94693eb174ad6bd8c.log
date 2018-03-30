@@ -200,3 +200,432 @@ Stack trace:
 #7 {main}
   thrown
 
+2018-03-27T12:56:19+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-27T12:56:30+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-27T18:31:34+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:37
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_star_rating('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-product.php(68): do_action('woocommerce_aft...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template.php(690): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(180): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(586): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortc
+
+2018-03-28T08:50:43+00:00 CRITICAL Uncaught Error: Call to undefined function getTimestamp() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:63
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(2
+
+2018-03-28T08:51:03+00:00 CRITICAL Uncaught Error: Call to undefined function getTimestamp() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:63
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(2
+
+2018-03-28T09:17:58+00:00 CRITICAL Uncaught Error: Call to undefined function timestamp() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:56
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286)
+
+2018-03-28T09:28:57+00:00 CRITICAL Uncaught Exception: DateTime::__construct(): Failed to parse time string (1522243737) at position 7 (7): Unexpected character in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:56
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(56): DateTime->__construct('1522243737')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdo
+
+2018-03-28T09:44:48+00:00 CRITICAL Uncaught Error: Call to undefined function srttodate() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:50
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286)
+
+2018-03-28T09:47:15+00:00 CRITICAL Uncaught Error: Call to undefined function have_post() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:54
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286)
+
+2018-03-28T09:48:48+00:00 CRITICAL Uncaught Error: Call to undefined function have_post() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:54
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286)
+
+2018-03-28T09:49:16+00:00 CRITICAL Uncaught Error: Call to undefined function have_post() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:54
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286)
+
+2018-03-28T09:49:23+00:00 CRITICAL Uncaught Error: Call to undefined function have_post() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:54
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): ofertas_semanales('<del><span clas...', Object(WC_Product_Simple))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1718): apply_filters('woocommerce_get...', '<del><span clas...', Object(WC_Product_Simple))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\loop\price.php(26): WC_Product->get_price_html()
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(900): wc_get_template('loop/price.php')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286)
+
+2018-03-28T09:49:39+00:00 CRITICAL Uncaught Error: Call to a member function get_average_rating() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:37
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_star_rating('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-product.php(68): do_action('woocommerce_aft...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template.php(690): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(180): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(586): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortc
+
+2018-03-28T10:38:11+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:63
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', '', 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '<h1>Ofertas Sem...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('<h1>Ofertas Sem...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<h1>Ofertas Sem...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '<h1>Ofertas Sem...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-w
+
+2018-03-28T10:47:18+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:83
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', Object(WC_Product_Simple), 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '<h1>Ofertas Sem...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('<h1>Ofertas Sem...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<h1>Ofertas Sem...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '<h1>Ofertas Sem...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs\wordpres
+
+2018-03-28T12:31:42+00:00 CRITICAL Uncaught Error: Call to undefined function is_sale() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:86
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', Object(WC_Product_Simple), 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_semana...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('[ofertas_semana...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('[ofertas_semana...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '[ofertas_semana...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs\wordpress\wp-inc
+
+2018-03-28T12:31:58+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_sale() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:86
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', Object(WC_Product_Simple), 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_semana...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('[ofertas_semana...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('[ofertas_semana...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '[ofertas_semana...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs
+
+2018-03-28T12:42:26+00:00 CRITICAL Uncaught Error: Call to undefined function number() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:83
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', Object(WC_Product_Simple), 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_semana...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('[ofertas_semana...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('[ofertas_semana...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '[ofertas_semana...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs\wordpress\wp-incl
+
+2018-03-28T12:43:01+00:00 CRITICAL Uncaught Error: Call to undefined function int() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:83
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', Object(WC_Product_Simple), 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_semana...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('[ofertas_semana...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('[ofertas_semana...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '[ofertas_semana...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs\wordpress\wp-include
+
+2018-03-28T12:43:13+00:00 CRITICAL Uncaught Error: Call to undefined function integer() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:83
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_semanales('', Object(WC_Product_Simple), 'ofertas_semanal...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_semana...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): do_shortcode('[ofertas_semana...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('[ofertas_semana...', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(240): apply_filters('the_content', '[ofertas_semana...')
+#6 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\page.php(18): the_content()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_page_content('')
+#8 C:\xampp\htdocs\wordpress\wp-inc
+
+2018-03-29T07:39:07+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-29T07:40:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-29T07:40:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-29T07:40:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-29T10:32:03+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-show-short-description\archive-short-descriptions.php:14
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_product_description('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-product.php(59): do_action('woocommerce_aft...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template.php(690): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(180): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(586): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\wordpress\wp-cont
+
+2018-03-29T10:32:13+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-show-short-description\archive-short-descriptions.php:14
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_product_description('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\content-product.php(59): do_action('woocommerce_aft...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template.php(690): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(180): load_template('C:\\xampp\\htdocs...', false)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\single-product\related.php(38): wc_get_template_part('content', 'product')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\wooc
+
+2018-03-29T11:32:05+00:00 CRITICAL Uncaught Error: Call to undefined function http://localhost/wordpress/wp-content/themes/supermax() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_supermercados_max_enqueue_styles('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(17): wp_head()
+
+2018-03-29T11:32:32+00:00 CRITICAL Uncaught Error: Call to undefined function http://localhost/wordpress/wp-content/themes/supermax() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_supermercados_max_enqueue_styles('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(17): wp_head()
+
+2018-03-29T11:32:52+00:00 CRITICAL Uncaught Error: Call to undefined function http://localhost/wordpress/wp-content/themes/supermax() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_supermercados_max_enqueue_styles('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(17): wp_head()
+
+2018-03-29T11:36:18+00:00 CRITICAL Uncaught Error: Call to undefined function http://localhost/wordpress/wp-content/themes/supermax() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:9
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_supermercados_max_enqueue_styles('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(17): wp_head()
+
+2018-03-29T15:37:54+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user('ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:39:50+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user('ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:40:09+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user('ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:41:16+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(186): um_user('cu->ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:41:18+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(186): um_user('cu->ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-29T15:41:44+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:41:50+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user()
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:42:53+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user('ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-29T15:42:54+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user('ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin.php(31): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-29T15:42:54+00:00 CRITICAL Uncaught Error: Call to a member function is_serialized() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\ultimate-member\core\um-short-functions.php:1467
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(187): um_user('ID')
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-03-29T15:44:49+00:00 CRITICAL Uncaught Error: Call to undefined function get_address_fields() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:187
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-29T15:47:35+00:00 CRITICAL Uncaught Error: Call to a member function get_address_fields() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:186
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin.php(31): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-29T15:48:40+00:00 CRITICAL Uncaught Error: Call to a member function woocommerce_default_address_fields() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:186
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin.php(31): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-29T18:08:05+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-29T18:13:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-30T08:26:55+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
