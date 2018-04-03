@@ -629,3 +629,514 @@ Stack trace:
 
 2018-03-30T08:26:55+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
 
+2018-03-30T10:55:19+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-30T12:52:32+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-03-30T13:07:15+00:00 CRITICAL Uncaught Error: Call to undefined function MiFuncionJS() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:335
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-30T13:07:28+00:00 CRITICAL Uncaught Error: Call to undefined function MiFuncionJS() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:335
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T13:07:45+00:00 CRITICAL Uncaught Error: Call to undefined function MiFuncionJS() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:335
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-30T13:08:02+00:00 CRITICAL Uncaught Error: Call to undefined function MiFuncionJS() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:335
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T13:39:33+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:419
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-30T13:39:35+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:419
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T13:39:47+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:419
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T13:39:49+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:419
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T13:40:02+00:00 CRITICAL Uncaught Error: Call to undefined function registerJs() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:419
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-30T16:51:36+00:00 CRITICAL Uncaught Error: Call to a member function get_zone_name() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:314
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-30T16:51:41+00:00 CRITICAL Uncaught Error: Call to a member function get_zone_name() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:314
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:51:44+00:00 CRITICAL Uncaught Error: Call to a member function get_zone_name() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:314
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:51:48+00:00 CRITICAL Uncaught Error: Call to a member function get_zone_name() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:314
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:51:52+00:00 CRITICAL Uncaught Error: Call to a member function get_zone_name() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:51:57+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-03-30T16:52:27+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:53:40+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:53:42+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:53:47+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:53:52+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:54:27+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get_zone_name() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:315
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-03-30T16:55:26+00:00 CRITICAL Uncaught Error: Call to a member function get_continent_code_for_country() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:195
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(198): WC_Shipping_Zone_Data_Store->get_zone_id_from_package(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shipping-zones.php(136): WC_Data_Store->__call('get_zone_id_fro...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(315): WC_Shipping_Zones::get_zone_matching_package(NULL)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-30T16:55:28+00:00 CRITICAL Uncaught Error: Call to a member function get_continent_code_for_country() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:195
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(198): WC_Shipping_Zone_Data_Store->get_zone_id_from_package(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shipping-zones.php(136): WC_Data_Store->__call('get_zone_id_fro...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(315): WC_Shipping_Zones::get_zone_matching_package(NULL)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-30T16:55:29+00:00 CRITICAL Uncaught Error: Call to a member function get_continent_code_for_country() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:195
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(198): WC_Shipping_Zone_Data_Store->get_zone_id_from_package(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shipping-zones.php(136): WC_Data_Store->__call('get_zone_id_fro...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(315): WC_Shipping_Zones::get_zone_matching_package(NULL)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-30T16:55:29+00:00 CRITICAL Uncaught Error: Call to a member function get_continent_code_for_country() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:195
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(198): WC_Shipping_Zone_Data_Store->get_zone_id_from_package(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shipping-zones.php(136): WC_Data_Store->__call('get_zone_id_fro...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(315): WC_Shipping_Zones::get_zone_matching_package(NULL)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-30T16:55:30+00:00 CRITICAL Uncaught Error: Call to a member function get_continent_code_for_country() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:195
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(198): WC_Shipping_Zone_Data_Store->get_zone_id_from_package(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shipping-zones.php(136): WC_Data_Store->__call('get_zone_id_fro...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(315): WC_Shipping_Zones::get_zone_matching_package(NULL)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-03-30T16:55:31+00:00 CRITICAL Uncaught Error: Call to a member function get_continent_code_for_country() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\data-stores\class-wc-shipping-zone-data-store.php:195
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(198): WC_Shipping_Zone_Data_Store->get_zone_id_from_package(NULL)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shipping-zones.php(136): WC_Data_Store->__call('get_zone_id_fro...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php(315): WC_Shipping_Zones::get_zone_matching_package(NULL)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(424): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordp
+
+2018-04-02T08:07:40+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-02T14:57:45+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-02T21:27:13+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-03T07:56:12+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping_Zones::get_zone_locations() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49):
+
+2018-04-03T07:57:01+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping_Zones::get_zone_locations() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:10
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49):
+
+2018-04-03T07:57:27+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping_Zones::get_zone_locations() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49):
+
+2018-04-03T07:57:38+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping_Zones::get_zone_locations() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49):
+
+2018-04-03T07:57:49+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping_Zones::get_zone_locations() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49):
+
+2018-04-03T07:58:03+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping_Zones::get_zone_locations() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49):
+
+2018-04-03T08:02:42+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_
+
+2018-04-03T08:03:03+00:00 CRITICAL Uncaught Error: Call to a member function get_results() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:42
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_
+
+2018-04-03T08:11:05+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:49
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-03T08:11:25+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:49
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-03T08:11:40+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:49
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-03T08:14:30+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:50
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-03T08:14:45+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:50
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-03T10:07:44+00:00 CRITICAL Uncaught Error: Call to undefined function select() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\woocommerce\cart\cart-shipping.php:44
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-cart-functions.php(229): wc_get_template('cart/cart-shipp...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\cart\cart-totals.php(48): wc_cart_totals_shipping_html()
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(211): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1578): wc_get_template('cart/cart-total...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): woocommerce_cart_totals('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\wordpre
+
+2018-04-03T13:15:54+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-03T14:03:26+00:00 CRITICAL Uncaught Error: Call to undefined function d_shortcode() in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\sections\shop_isle_banners_section.php:99
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(39): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
+2018-04-03T14:03:44+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_product_category() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:213
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_mensuales('', Object(WC_Product_Simple), 'ofertas_mensual...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_mensua...')
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\sections\shop_isle_banners_section.php(99): do_shortcode('[ofertas_mensua...')
+#4 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(39): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {m
+
+2018-04-03T14:03:59+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_product_category() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:213
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas_mensuales('', Object(WC_Product_Simple), 'ofertas_mensual...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas_mensua...')
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\sections\shop_isle_banners_section.php(99): do_shortcode('[ofertas_mensua...')
+#4 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(39): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#8 {m
+
+2018-04-03T15:52:08+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:221
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas(Array, '', 'ofertas')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas catego...')
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(40): do_shortcode('[ofertas catego...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-03T15:52:39+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:221
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas(Array, '', 'ofertas')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas catego...')
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(40): do_shortcode('[ofertas catego...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-03T16:04:24+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:224
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(319): ofertas(Array, '', 'ofertas')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(oferta...', 'do_shortcode_ta...', '[ofertas catego...')
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(40): do_shortcode('[ofertas catego...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+

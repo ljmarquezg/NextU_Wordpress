@@ -35,8 +35,9 @@ if ( defined( 'WCCM_VERISON' ) ) {
 }
 
 /******  Banners Section */
-$banners_section = get_template_directory() . '/inc/sections/shop_isle_banners_section.php';
-require_once( $banners_section );
+//$banners_section = get_template_directory() . '/inc/sections/shop_isle_banners_section.php';
+//require_once( $banners_section );
+echo do_shortcode( '[ofertas categoria="Ofertas Mensuales"]' );
 
 /******* Products Section */
 $latest_products = get_template_directory() . '/inc/sections/shop_isle_products_section.php';
