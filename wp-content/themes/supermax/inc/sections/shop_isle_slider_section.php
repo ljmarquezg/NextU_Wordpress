@@ -12,12 +12,12 @@ if ( ! empty( $shop_isle_slider_hide ) && (bool) $shop_isle_slider_hide === true
 }
 $shop_isle_homepage_slider_shortcode = get_theme_mod( 'shop_isle_homepage_slider_shortcode' );
 
-echo '<section id="home" class="home-section home-parallax home-fade ' . ( empty( $shop_isle_homepage_slider_shortcode ) ? ' home-full-height' : ' home-slider-plugin' ) . '">';
+// echo '<section id="home" class="home-section home-parallax home-fade ' . ( empty( $shop_isle_homepage_slider_shortcode ) ? ' home-full-height' : ' home-slider-plugin' ) . '">';
 
 if ( ! empty( $shop_isle_homepage_slider_shortcode ) ) {
 	echo do_shortcode( $shop_isle_homepage_slider_shortcode );
 } else {
-
+	
 	$shop_isle_slider = get_theme_mod(
 		'shop_isle_slider', json_encode(
 			array(
@@ -46,24 +46,24 @@ if ( ! empty( $shop_isle_homepage_slider_shortcode ) ) {
 		)
 	);
 
-	if ( ! empty( $shop_isle_slider ) ) {
+	// if ( ! empty( $shop_isle_slider ) ) {
 
 		$shop_isle_slider_decoded = json_decode( $shop_isle_slider );
 
-		if ( ! empty( $shop_isle_slider_decoded ) ) {
+	// 	if ( ! empty( $shop_isle_slider_decoded ) ) {
 
-			echo '<div class="hero-slider">';
+	// 		echo '<div class="hero-slider">';
 
-			echo '<ul class="slides">';
+	// 		echo '<ul class="slides">';
 
-			/**
-			 * Variable used to make the title of the first slide an <h1> tag.
-			 * The rest of the slides will use a <div> tag
-			 * For SEO purposes
-			 */
-			$has_h1_tag = 0;
+	// 		/**
+	// 		 * Variable used to make the title of the first slide an <h1> tag.
+	// 		 * The rest of the slides will use a <div> tag
+	// 		 * For SEO purposes
+	// 		 */
+	// 		$has_h1_tag = 0;
 
-			foreach ( $shop_isle_slider_decoded as $shop_isle_slide ) {
+	 		foreach ( $shop_isle_slider_decoded as $shop_isle_slide ) {
 
 				$image_url = ! empty( $shop_isle_slide->image_url ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->image_url, 'Slider section' ) : '';
 				$text      = ! empty( $shop_isle_slide->text ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->text, 'Slider section' ) : '';
@@ -102,15 +102,15 @@ if ( ! empty( $shop_isle_homepage_slider_shortcode ) ) {
 				}// End if().
 			}// End foreach().
 
-			echo '</ul>';
+	// 		echo '</ul>';
 
-			echo '</div>';
+	// 		echo '</div>';
 
-		}// End if().
-	}// End if().
+	// 	}// End if().
+	// }// End if().
 }// End if().
 
-echo '</section >';
+// echo '</section >';
 
 
 

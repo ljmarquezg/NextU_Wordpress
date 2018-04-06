@@ -1,21 +1,21 @@
 <?php
 	/*==================================================================================
-						Agregar Child Theme
+						Configurar Child Theme
 	==================================================================================*/
 
 	 add_action( 'wp_enqueue_scripts', 'shop_isle_supermercados_max_enqueue_styles' );
 	 function shop_isle_supermercados_max_enqueue_styles() {
-		   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
+		   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+		   wp_enqueue_script( 'slider', get_stylesheet_directory_uri() . '/js/custom.js', array( 'jquery' ), '1.0', true ); 
 		   wp_enqueue_script( 'supermax', get_stylesheet_directory_uri() . '/js/supermax.js', array( 'jquery' ), '1.0', true );
 		   } 
 		   require_once dirname( __FILE__ ).'/session-manager.php';
-		   //require_once dirname( __FILE__ ).'/geolocation.php';
+		   require_once dirname( __FILE__ ).'/products.php';
 	
 
 	/*==================================================================================
 						Modificar el estilo del shopPage
 	==================================================================================*/
-		   remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 		   function shop_isle_shop_page_wrapper() {
 			?>
 			<section class="module-large module-large-shop">
@@ -44,14 +44,36 @@
 	===================================================================================================================*/
 	remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 	add_action('woocommerce_after_shop_loop_item_title', 'add_star_rating', 5	 );
+
 	function add_star_rating()
 	{
 		global $woocommerce, $product;
-		$average = $product->get_average_rating();
-		echo '<div class="star-rating"><span style="width:'.( ( $average / 5 ) * 100 ) . '%"><strong itemprop="ratingValue" class="rating">'.$average.'</strong> '.__( 'out of 5', 'woocommerce' ).'</span></div>';
-	}
-		
+		if (!is_front_page() || is_home()):
+			$average = $product->get_average_rating();
+			echo '<div class="star-rating"><span style="width:'.( ( $average / 5 ) * 100 ) . '%"><strong itemprop="ratingValue" class="rating">'.$average.'</strong> '.__( 'out of 5', 'woocommerce' ).'</span></div>';
+		endif;
+	}	
 
+
+	add_filter('woocommerce_sale_flash', 'show_discount_ammpunt', 10, 3);
+	function show_discount_ammpunt($content, $post, $product){
+		if ($product->is_on_sale() && $product->product_type == 'variable') :
+			$available_variations = $product->get_available_variations();								
+		   $maximumper = 0;
+		   for ($i = 0; $i < count($available_variations); ++$i) :
+			   $variation_id=$available_variations[$i]['variation_id'];
+			   $variable_product1= new WC_Product_Variation( $variation_id );
+			   $regular_price = $variable_product1 ->regular_price;
+ 			   $sales_price = $variable_product1 ->sale_price;
+			   $price= ( $regular_price - $sales_price ) ;
+		   endfor;
+		elseif($product->is_on_sale() && $product->product_type == 'simple') :
+			$price = $product->regular_price - $product->sale_price;
+		endif;
+
+   $content = '<span class="onsale">'.__( 'Sale!', 'woocommerce' ). ' <small> - Ahorre ' . $price . ' '. get_woocommerce_currency_symbol() .'</small></span>';
+   return $content;
+}
 ?>
 
 
@@ -104,87 +126,6 @@
 			
 
 <?php 
-/*==================================================================================================================
-							Mostrar productos de la semana
-		===================================================================================================================*/
-		add_shortcode('ofertas_semanales', 'ofertas_semanales');
-
-		function ofertas_semanales( $price, $product ) {
-			//Obtener todos los post que sean de tipo producto
-			$args = array(
-				'post_type' => 'product',
-			);
-			//Crear un na consulta con los agrumentos
-			$loop = new WP_Query( $args );
-			//Verificar que existan post de tipo productos
-			if ( $loop->have_posts() ) :
-			?>
-			<div class="products_shortcode">
-				<div class="woocommerce columns-4">
-				<ul class="products columns-4">
-			<?php 
-			//Mientras existan posts
-			while ( $loop->have_posts() ) : 
-			$loop->the_post();
-			global $product;
-			//Obtener el la fecha de inicio de la pormoción
-			$sales_price_from = get_post_meta( $product->id, '_sale_price_dates_from', true );
-			//Obtener el la fecha de final de la pormoción
-			$sales_price_to  = get_post_meta( $product->id, '_sale_price_dates_to', true );
-
-			$weekday = date("w"); //Dia de la semana en numero
-			$weekend = (6-$weekday); //Calcular cuantos dias quedan de esta semana
-			/*-----Dar formato al dia de hoy -----------*/
-				$date=date_create(date("Y-m-j", time()));
-				$date = date_add($date,date_interval_create_from_date_string("".$weekend." days"));
-				$date = strtotime(date_format($date,"Y-m-d"));
-			/*------------------------------------------*/
-				//Condiciona que el producto esté en oferta y esté dentro del rango dela semana
-				$sales_w_dates = $product->is_on_sale() && $sales_price_from <= $date   && $date <= $sales_price_to;
-				//Condiciona que el producto esté en oferta y no se hayan definido períodos de la oferta
-				$sales_no_dates = $product->is_on_sale() && $sales_price_from == ''  && $sales_price_to == '';
-
-				if ( $sales_no_dates || $sales_w_dates ) :
-					add_action( 'woocommerce_before_single_product', 'woocommerce_template_loop_add_to_cart', 1 );
-					wc_get_template_part( 'content', 'product' );						
-					add_action( 'woocommerce_after_single_product', 'shop_isle_product_page_wrapper_end', 2);
-				endif;
-					
-				endwhile;
-				?>
-				</ul>
-				</div>
-				</div>
-		
-				<div class="row">
-				<div class="col-sm-12 align-center">
-				
-				<?php if ( function_exists( 'wc_get_page_id' ) ) {
-					echo '<a href="' . esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ) . '" class="btn btn-b btn-round">' . apply_filters( 'shop_isle_see_all_products_label', __( 'See all products', 'shop-isle' ) ) . '</a>';
-				} elseif ( function_exists( 'woocommerce_get_page_id' ) ) {
-					echo '<a href="' . esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ) . '" class="btn btn-b btn-round">' . apply_filters( 'shop_isle_see_all_products_label', __( 'See all products', 'shop-isle' ) ) . '</a>';
-				}
-				?>
-				</div>
-			
-				</div>
-	
-		<?php else :
-	
-			echo '<div class="row">';
-			echo '<div class="col-sm-6 col-sm-offset-3">';
-			echo '<p class="">' . __( 'No products found.', 'shop-isle' ) . '</p>';
-			echo '</div>';
-			echo '</div>';
-	
-		endif;
-	
-		wp_reset_postdata();
-
-			//return apply_filters( 'woocommerce_get_price', $price );
-		}
-		
-
 
 		/*==================================================================================================================
 							Mostrar ofertas
@@ -196,7 +137,8 @@
 				'post_type' => 'product',
 			);
 			$attributos = shortcode_atts( array (
-				'categoria' => 'None',
+				'categoria' => '',
+				'id'=> '',
 			), $atts );
 
 			//Crear un na consulta con los agrumentos
@@ -213,24 +155,24 @@
 			while ( $loop->have_posts() ) : 
 			$loop->the_post();
 			global $product;
-
-			foreach ($product->category_ids as $key => $cat_id) {
+			$count = 1;
+			if ($count < 4) :
+			foreach ($product->category_ids as $key => $cat_id) :
 				//Obtener las categorías a las que pertenece el producto.
 				$category = get_term_by('id', $cat_id, 'product_cat', 'ARRAY_A');
 				//Verificar que coincida con la categoría a filtrar
-				if ($category['name'] === $attributos['categoria']){
+				if ($category['name'] === $attributos['categoria'] || $cat_id['id'] === $attributos['id']):
 				//Condiciona que el producto esté en oferta y no se hayan definido períodos de la oferta
-				if ( $product->is_on_sale() ) :
-					add_action( 'woocommerce_before_single_product', 'woocommerce_template_loop_add_to_cart', 1 );
-					wc_get_template_part( 'content', 'product' );						
-					add_action( 'woocommerce_after_single_product', 'shop_isle_product_page_wrapper_end', 2);
+					if ( $product->is_on_sale() ) :
+						add_action( 'woocommerce_before_single_product', 'woocommerce_template_loop_add_to_cart', 1 );
+						wc_get_template_part( 'content', 'product' );						
+						add_action( 'woocommerce_after_single_product', 'shop_isle_product_page_wrapper_end', 2);
+					endif;
 				endif;
-				}
-			}	
-			
-			//Condiciona que el producto esté en oferta y esté dentro del rango dela semana
-			
-					
+				$count++;
+				endforeach;
+			endif;
+							
 				endwhile;
 				
 				?>
@@ -267,3 +209,9 @@
 		}
 		
 		?>
+
+
+<?php
+/*==================================================================================================================
+							Agregar campos al fomulario
+		===================================================================================================================*/	  

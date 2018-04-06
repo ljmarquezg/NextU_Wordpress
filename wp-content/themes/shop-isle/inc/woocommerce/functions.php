@@ -437,7 +437,7 @@ function shop_isle_products_slider_on_single_page() {
 
 				echo '<div class="row">';
 
-				echo '<div class="owl-carousel text-center" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
+				echo '<div class="owl-carousel text-center" data-loop="false" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
 
 				while ( $shop_isle_products_slider_loop->have_posts() ) :
 
@@ -498,7 +498,7 @@ function shop_isle_products_slider_on_single_page() {
 
 						echo '<div class="row">';
 
-						echo '<div class="owl-carousel text-center" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
+						echo '<div class="owl-carousel text-center" data-loop="false" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
 
 						while ( $shop_isle_products_slider_loop->have_posts() ) :
 

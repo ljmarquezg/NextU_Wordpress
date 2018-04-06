@@ -10,10 +10,7 @@ $shop_isle_products_slider_hide = get_theme_mod( 'shop_isle_products_slider_hide
 if ( ! empty( $shop_isle_products_slider_hide ) && (bool) $shop_isle_products_slider_hide === true ) {
 	return;
 }
-
 echo '<section class="home-product-slider">';
-
-
 echo '<div class="container">';
 
 
@@ -46,8 +43,6 @@ if ( ! empty( $shop_isle_products_slider_title ) ) :
 	echo '</div><!-- .row -->';
 
 	$shop_isle_products_slider_category = get_theme_mod( 'shop_isle_products_slider_category' );
-
-
 	$tax_query_item  = array();
 	$meta_query_item = array();
 
@@ -101,68 +96,35 @@ if ( ! empty( $shop_isle_products_slider_title ) ) :
 		if ( $shop_isle_products_slider_loop->have_posts() ) :
 
 			$rtl_slider      = apply_filters( 'shop_isle_products_slider_section_rtl', 'false' );
-			$number_of_items = apply_filters( 'shop_isle_products_slider_section_items', 5 );
-			$pagination      = apply_filters( 'shop_isle_products_slider_section_pagination', 'false' );
-			$navigation      = apply_filters( 'shop_isle_products_slider_section_navigation', 'false' );
+			$number_of_items = apply_filters( 'shop_isle_products_slider_section_items', 4 );
+			$pagination      = apply_filters( 'shop_isle_products_slider_section_pagination', 'true' );
+			$navigation      = apply_filters( 'shop_isle_products_slider_section_navigation', 'true' );
 
 			echo '<div class="row">';
-
-			echo '<div class="owl-carousel text-center" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
+			echo '<div class="container">';
+			echo '<div class="supermax-carousel owl-carousel text-center" data-loop="false" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
 
 			while ( $shop_isle_products_slider_loop->have_posts() ) :
 
 				$shop_isle_products_slider_loop->the_post();
 				global $product;
 				echo '<div class="owl-item">';
-				echo '<div class="col-sm-12">';
-				echo '<div class="ex-product">';
-				if ( function_exists( 'woocommerce_get_product_thumbnail' ) ) :
-					echo '<a href="' . esc_url( get_permalink() ) . '">' . woocommerce_get_product_thumbnail() . '</a>';
-				endif;
-				echo '<h4 class="shop-item-title font-alt"><a href="' . esc_url( get_permalink() ) . '">' . get_the_title() . '</a></h4>';
-				$rating_html = '';
-				if ( function_exists( 'method_exists' ) && ( function_exists( 'wc_get_rating_html' ) ) && method_exists( $product, 'get_average_rating' ) ) {
-					$shop_isle_avg = $product->get_average_rating();
-					if ( ! empty( $shop_isle_avg ) ) {
-						$rating_html = wc_get_rating_html( $shop_isle_avg );
-					}
-				} elseif ( function_exists( 'method_exists' ) && method_exists( $product, 'get_rating_html' ) && method_exists( $product, 'get_average_rating' ) ) {
-					$shop_isle_avg = $product->get_average_rating();
-					if ( ! empty( $shop_isle_avg ) ) {
-						$rating_html = $product->get_rating_html( $shop_isle_avg );
-					}
-				}
-				if ( ! empty( $rating_html ) && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) {
-					echo '<div class="product-rating-home">' . $rating_html . '</div>';
-				}
-				if ( function_exists( 'method_exists' ) && method_exists( $product, 'is_on_sale' ) ) {
-					if ( $product->is_on_sale() ) {
-						if ( function_exists( 'woocommerce_show_product_sale_flash' ) ) {
-							woocommerce_show_product_sale_flash();
-						}
-					}
-				}
-				if ( function_exists( 'method_exists' ) && method_exists( $product, 'managing_stock' ) && method_exists( $product, 'is_in_stock' ) ) {
-					if ( ! $product->managing_stock() && ! $product->is_in_stock() ) {
-						echo '<span class="onsale stock out-of-stock">' . esc_html__( 'Out of Stock', 'shop-isle' ) . '</span>';
-					}
-				}
-				$shop_isle_price = '';
-				if ( function_exists( 'method_exists' ) && method_exists( $product, 'get_price_html' ) ) {
-					$shop_isle_price = $product->get_price_html();
-				}
-				if ( ! empty( $shop_isle_price ) ) {
-					echo wp_kses_post( $shop_isle_price );
-				}
-				echo '</div>';
-				echo '</div>';
+					echo '<div class="col-sm-12 products">';
+								echo '<div class="woocommerce">';
+									echo '<ul class="products">';
+										add_action( 'woocommerce_before_single_product', 'woocommerce_template_loop_add_to_cart', 1 );
+										wc_get_template_part( 'content', 'product' );						
+										add_action( 'woocommerce_after_single_product', 'shop_isle_product_page_wrapper_end', 2);
+									echo '</ul>';
+								echo '</div>';
+					echo '</div>';
 				echo '</div>';
 
 			endwhile;
 
 			wp_reset_postdata();
 			echo '</div>';
-
+			echo '</div>';
 			echo '</div>';
 
 		endif;
@@ -174,62 +136,28 @@ else :
 	if ( $shop_isle_products_slider_loop->have_posts() ) :
 
 		$rtl_slider      = apply_filters( 'shop_isle_products_slider_section_rtl', 'false' );
-		$number_of_items = apply_filters( 'shop_isle_products_slider_section_items', 5 );
-		$pagination      = apply_filters( 'shop_isle_products_slider_section_pagination', 'false' );
-		$navigation      = apply_filters( 'shop_isle_products_slider_section_navigation', 'false' );
+		$number_of_items = apply_filters( 'shop_isle_products_slider_section_items', 4 );
+		$pagination      = apply_filters( 'shop_isle_products_slider_section_pagination', 'true' );
+		$navigation      = apply_filters( 'shop_isle_products_slider_section_navigation', 'true' );
 		echo '<div class="row">';
 
-		echo '<div class="owl-carousel text-center" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '">';
+		echo '<div class="supermax-carousel text-center" data-loop="false" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '">';
 
 		while ( $shop_isle_products_slider_loop->have_posts() ) :
 
 			$shop_isle_products_slider_loop->the_post();
 			global $product;
 			echo '<div class="owl-item">';
-			echo '<div class="col-sm-12">';
-			echo '<div class="ex-product">';
-			if ( function_exists( 'woocommerce_get_product_thumbnail' ) ) :
-				echo '<a href="' . esc_url( get_permalink() ) . '">' . woocommerce_get_product_thumbnail() . '</a>';
-			endif;
-			echo '<h4 class="shop-item-title font-alt"><a href="' . esc_url( get_permalink() ) . '">' . get_the_title() . '</a></h4>';
-
-			$rating_html = '';
-			if ( function_exists( 'method_exists' ) && ( function_exists( 'wc_get_rating_html' ) ) && method_exists( $product, 'get_average_rating' ) ) {
-				$shop_isle_avg = $product->get_average_rating();
-				if ( ! empty( $shop_isle_avg ) ) {
-					$rating_html = wc_get_rating_html( $shop_isle_avg );
-				}
-			} elseif ( function_exists( 'method_exists' ) && method_exists( $product, 'get_rating_html' ) && method_exists( $product, 'get_average_rating' ) ) {
-				$shop_isle_avg = $product->get_average_rating();
-				if ( ! empty( $shop_isle_avg ) ) {
-					$rating_html = $product->get_rating_html( $shop_isle_avg );
-				}
-			}
-			if ( ! empty( $rating_html ) && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) {
-				echo '<div class="product-rating-home">' . $rating_html . '</div>';
-			}
-			if ( function_exists( 'method_exists' ) && method_exists( $product, 'is_on_sale' ) ) {
-				if ( $product->is_on_sale() ) {
-					if ( function_exists( 'woocommerce_show_product_sale_flash' ) ) {
-						woocommerce_show_product_sale_flash();
-					}
-				}
-			}
-			if ( function_exists( 'method_exists' ) && method_exists( $product, 'managing_stock' ) && method_exists( $product, 'is_in_stock' ) ) {
-				if ( ! $product->managing_stock() && ! $product->is_in_stock() ) {
-					echo '<span class="onsale stock out-of-stock">' . esc_html__( 'Out of Stock', 'shop-isle' ) . '</span>';
-				}
-			}
-			$shop_isle_price = '';
-			if ( function_exists( 'method_exists' ) && method_exists( $product, 'get_price_html' ) ) {
-				$shop_isle_price = $product->get_price_html();
-			}
-			if ( ! empty( $shop_isle_price ) ) {
-				echo wp_kses_post( $shop_isle_price );
-			}
-			echo '</div>';
-			echo '</div>';
-			echo '</div>';
+					echo '<div class="col-sm-12 products">';
+								echo '<div class="woocommerce">';
+									echo '<ul class="products">';
+										add_action( 'woocommerce_before_single_product', 'woocommerce_template_loop_add_to_cart', 1 );
+										wc_get_template_part( 'content', 'product' );						
+										add_action( 'woocommerce_after_single_product', 'shop_isle_product_page_wrapper_end', 2);
+									echo '</ul>';
+								echo '</div>';
+					echo '</div>';
+				echo '</div>';
 
 		endwhile;
 

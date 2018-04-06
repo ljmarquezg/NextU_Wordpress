@@ -64,7 +64,7 @@ if ( isset( $shop_isle_banners_hide ) && $shop_isle_banners_hide != 1 ) :
 					}
 
 						echo '<div class="row shop_isle_bannerss_section">';
-						do_shortcode('[ofertas_mensuales]');
+						echo do_shortcode( '[products per_page="4" columns="4" category="'.$shop_isle_banners_title.'" orderby="rand" order="rand" on_sale="true"]' );						
 						echo '</div>';
 
 					echo '</div>';

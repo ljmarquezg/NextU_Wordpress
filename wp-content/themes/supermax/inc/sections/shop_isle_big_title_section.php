@@ -25,14 +25,12 @@ if ( ( isset( $shop_isle_big_title_hide ) && $shop_isle_big_title_hide != 1 ) ||
 		$shop_isle_big_title_image    = get_theme_mod( 'shop_isle_big_title_image', get_template_directory_uri() . '/assets/images/slide1.jpg' );
 		$shop_isle_big_title_title    = get_theme_mod( 'shop_isle_big_title_title', 'Shop Isle' );
 		$shop_isle_big_title_subtitle = get_theme_mod( 'shop_isle_big_title_subtitle', __( 'WooCommerce Theme', 'shop-isle' ) );
+		
+		echo '<div class="hero-slider">';
 
-		if ( ! empty( $shop_isle_big_title_image ) ) {
-
-			echo '<div class="hero-slider">';
-
-			echo '<ul class="slides">';
-
-			echo '<li class="bg-dark" style="background-image:url(' . esc_url( $shop_isle_big_title_image ) . ')">';
+		echo '<ul class="slides">';
+		
+		echo '<li class="bg-dark" style="background-image:url(' . esc_url( $shop_isle_big_title_image ) . ')">';
 
 			echo '<div class="home-slider-overlay"></div>';
 			echo '<div class="hs-caption">';
@@ -56,11 +54,84 @@ if ( ( isset( $shop_isle_big_title_hide ) && $shop_isle_big_title_hide != 1 ) ||
 
 			echo '</li><!-- .bg-dark -->';
 
+		$args = array(
+			'posts_per_page' => -1,
+			'product_cat' => 'ofertas-diarias',
+			'post_type' => 'product',
+			'orderby' => 'random',
+			);
+			$the_query = new WP_Query( $args );
+
+
+			while ( $the_query->have_posts() ) : $the_query->the_post();
+			global $product;
+			$count = 1;
+			if ($count < 4) :
+			foreach ($product->category_ids as $key => $cat_id) :
+				//Obtener las categorías a las que pertenece el producto.
+				$category = get_term_by('id', $cat_id, 'product_cat', 'ARRAY_A');
+				//Verificar que coincida con la categoría a filtrar
+				if ($category['name'] === 'Ofertas Diarias'):
+				//Condiciona que el producto esté en oferta y no se hayan definido períodos de la oferta
+					if ( $product->is_on_sale() ) :
+						$product->name;
+						$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($product->id), 'single-post-thumbnail' );
+						$subtext = descripcion_corta(10, get_the_excerpt());
+						$url = get_permalink($product->id);
+						$label = 'Ver Oferta';
+					endif;
+
+					$image_url = ! empty( $image_url[0] ) ? apply_filters( 'shop_isle_translate_single_string', $image_url[0], 'Slider section' ) : '';
+					$text      = ! empty( $product->name ) ? apply_filters( 'shop_isle_translate_single_string', $product->name, 'Slider section' ) : '';
+					$subtext   = ! empty( $subtext ) ? apply_filters( 'shop_isle_translate_single_string', $subtext, 'Slider section' ) : '';
+					$link      = ! empty( $url ) ? apply_filters( 'shop_isle_translate_single_string', $url, 'Slider section' ) : '';
+					$label     = ! empty( $label ) ? apply_filters( 'shop_isle_translate_single_string', $label, 'Slider section' ) : '';
+
+					if ( ! empty( $image_url ) ) {
+
+						echo '<li class="bg-dark-30 bg-dark" style="background-image:url(' . esc_url( $image_url ) . ')">';
+						echo '<div class="home-slider-overlay"></div>';
+						echo '<div class="hs-caption">';
+						echo '<div class="caption-content">';
+	
+						if ( ! empty( $text ) ) {
+							if ( ! $has_h1_tag ) {
+								echo '<h1 class="hs-title-size-4 font-alt mb-30">' . wp_kses_post( $text ) . '</h1>';
+								$has_h1_tag = 1;
+							} else {
+								echo '<div class="hs-title-size-4 font-alt mb-30">' . wp_kses_post( $text ) . '</div>';
+							}
+						}
+	
+						if ( ! empty( $subtext ) ) {
+							echo '<div class="hs-title-size-1 font-alt mb-40">' . wp_kses_post( $subtext ) . '</div>';
+						}
+	
+						if ( ! empty( $link ) && ! empty( $label ) ) {
+							echo '<a href="' . esc_url( $link ) . '" class="section-scroll btn btn-border-w btn-round">' . wp_kses_post( $label ) . '</a>';
+						}
+	
+						echo '</div>';
+						echo '</div>';
+						echo '</li>';
+	
+					}// End if().
+				// }// End foreach().
+
+				endif;
+				$count++;
+				endforeach;
+			endif;
+
+				
+			endwhile;
+
 			echo '</ul><!-- .slides -->';
 
 			echo '</div><!-- .hero-slider -->';
 
-		}
+
+		// }
 	}// End if().
 }// End if().
 

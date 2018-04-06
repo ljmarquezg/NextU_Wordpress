@@ -88,7 +88,7 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_show_product_
 add_action( 'woocommerce_after_shop_loop_item_title', 'shop_isle_outofstock_notify_on_archives', 10 );
 
 /* add products slider */
-add_action( 'woocommerce_after_single_product', 'shop_isle_products_slider_on_single_page', 10, 0 );
+//add_action( 'woocommerce_after_single_product', 'shop_isle_products_slider_on_single_page', 10, 0 );
 
 /* notices */
 remove_action( 'woocommerce_before_single_product', 'wc_print_notices', 10 );

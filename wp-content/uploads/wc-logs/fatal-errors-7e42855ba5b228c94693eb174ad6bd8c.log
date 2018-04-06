@@ -1140,3 +1140,345 @@ Stack trace:
 #7 {main}
   thrown
 
+2018-04-04T15:29:50+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:66
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-04T18:07:32+00:00 CRITICAL Uncaught Error: Call to a member function is_on_sale() on null in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:204
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-04T21:34:15+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-05T08:53:14+00:00 CRITICAL Uncaught Error: Call to undefined function vardump() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle_heade.
+
+2018-04-05T08:53:44+00:00 CRITICAL Uncaught Error: Call to undefined function vardump() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:28
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle_heade.
+
+2018-04-05T18:24:10+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-05T18:24:16+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-06T10:19:36+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:21:01+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\functions.php:218
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(424): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-06T10:21:55+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:22:07+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:23:18+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:23:32+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:23:44+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:23:58+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:24:05+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:24:12+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:24:45+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:25:01+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:25:20+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:30:11+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown
+
+2018-04-06T10:30:13+00:00 CRITICAL Uncaught Error: Using $this when not in object context in C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\woocommerce\functions.php:709
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\init.php(86): require()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\functions.php(12): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-settings.php(426): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-06T10:30:31+00:00 CRITICAL Uncaught Exception: DateTime::__construct(): Failed to parse time string (septiembre 1, 1988) at position 0 (s): The timezone could not be found in the database in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:23
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php(23): DateTime->__construct('septiembre 1, 1...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-ho
+
+2018-04-06T10:38:09+00:00 CRITICAL Uncaught Exception: DateTime::__construct(): Failed to parse time string (septiembre 1, 1988) at position 0 (s): The timezone could not be found in the database in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php(25): DateTime->__construct('septiembre 1, 1...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-ho
+
+2018-04-06T11:04:30+00:00 CRITICAL Uncaught Error: Call to undefined method DateTime::date_diff() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_i
+
+2018-04-06T11:08:10+00:00 CRITICAL Uncaught TypeError: DateTime::__construct() expects parameter 1 to be string, object given in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php(25): DateTime->__construct(Object(DateInterval))
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\wo
+
+2018-04-06T11:12:58+00:00 CRITICAL Uncaught Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:25
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-06T11:18:39+00:00 CRITICAL Uncaught Error: Call to a member function format() on string in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:23
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isl
+
+2018-04-06T11:21:09+00:00 CRITICAL Uncaught Error: Cannot use object of type DateTime as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\session-manager.php:24
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): add_loginout_link('<li id="menu-it...', Object(stdClass))
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(203): WP_Hook->apply_filters('<li id="menu-it...', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\nav-menu-template.php(220): apply_filters('wp_nav_menu_ite...', '<li id="menu-it...', Object(stdClass))
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\inc\structure\header.php(110): wp_nav_menu(Object(stdClass))
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): shop_isle_primary_navigation('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\shop-isle\header.php(49): do_action('shop_isle
+
+2018-04-06T17:36:54+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-06T18:35:10+00:00 CRITICAL Uncaught Error: Call to undefined function descripcion_corta() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:79
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-06T18:37:34+00:00 CRITICAL Uncaught Error: Call to undefined function descripcion_corta() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:79
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-06T18:43:45+00:00 CRITICAL Uncaught Error: Call to undefined function descripcion_corta() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:79
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-06T18:43:53+00:00 CRITICAL Uncaught Error: Call to undefined function descripcion_corta() in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:79
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+

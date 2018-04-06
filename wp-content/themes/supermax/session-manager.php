@@ -4,81 +4,105 @@
 	============================================================================================================*/
 
 	add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
-	
+
+	$myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
+
+if ( $myaccount_page_id ) {
+
+  $logout_url = wp_logout_url( get_permalink( $myaccount_page_id ) );
+
+  if ( get_option( 'woocommerce_force_ssl_checkout' ) == 'yes' )
+    $logout_url = str_replace( 'http:', 'https:', $logout_url );
+}
+
 	function add_loginout_link( $items, $args ) {
+		$myaccount = get_permalink( get_option('woocommerce_myaccount_page_id') );
+		$orders = $myaccount.'/orders';
+		$profile = $myaccount.'/edit-account';
     if (is_user_logged_in() && $args->theme_location == 'primary') {
-		$cu = wp_get_current_user();
+		$current_user = wp_get_current_user();
+
+		//----------- Calcular la edad del cliente-----------------
+		$fecha_nacimiento = get_user_meta( get_current_user_id(),'billing_fecha_de_nacimiento', TRUE).' 00:00:00';    
+		$date = new DateTime($fecha_nacimiento);
+		$now = new DateTime();
+		$edad = $date->diff($now)->format("%Y");
+		//---------------------------------------------------------
 		$address1 = '';
 		$address2 = '';
-		$id = $cu->ID;
-		$nombre =  $cu->user_firstname;
-		$telefono = $cu->phone;
-		$address1 = get_user_meta( $current_user->ID, 'billing_address_1', true );
-		$address2 = get_user_meta( $current_user->ID, 'billing_address_2', true );
+		$id = $current_user->ID;
+		$nombre =  $current_user->user_firstname;
+		//----------- Verificar Direcciones -----------------------
+		$address1 = get_user_meta( $id, 'billing_address_1', true );
+		$address2 = get_user_meta( $id, 'billing_address_2', true );
 		if ($address1 == ''){
-			$address1 = get_user_meta( $current_user->ID, 'shipping_address_1', true );
-			$address2 = get_user_meta( $current_user->ID, 'shipping_address_2', true );
+			$address1 = get_user_meta( $id, 'shipping_address_1', true );
+			$address2 = get_user_meta( $id, 'shipping_address_2', true );
 		}
-		$edad = '18';
-		$sexo = 'Masculino';
-		$almacen = 'Bariloche';
+		//--------------------------------------------------------
+		$telefono = '</br><small>'.get_user_meta( get_current_user_id(),'billing_telefono', TRUE).'</small>';
+		$address = '</br><small>'.descripcion_corta(50, $address1 .' '. $address2).'</small>';
+		$edad = '</br><small>'.$edad.'</small>';
+		$sexo = '</br><small>'.get_user_meta( get_current_user_id(), 'billing_genero', TRUE) .'</small>';
+		$identificacion = '</br><small>'.get_user_meta( get_current_user_id(), 'billing_identificación', TRUE).';</small>';
+
+
+
+		$user_info = '<p>Dirección:'.$address.'</p>
+						<p>Teléfono:'.$telefono.'</p>
+						<p>Edad:'.$edad.'</p>
+						<p>Sexo:'.$sexo.'</p>';
 
 		$items .= 
-		'<li class="menu-item  menu-item-has-children  has_children"><a href="#">Mi Cuenta</a><p class="dropdownmenu"></p>
+		'<li class="menu-item  menu-item-has-children  has_children"><a href="#">Hola, '.$nombre.'</a><p class="dropdownmenu"></p>
 			<ul class="sub-menu">
-				<li class="menu-item"><a href="#">Hola, '.$nombre.'</a></p>
+				<li class="menu-item"><a href="'.$profile.'">Editar Perfíl</a></li>
 				<li class="menu-item small">
-					<p>Dirección<small>'.descripcion_corta(50, $address1).'</small></p>
-					<p>Telefono:'.$telefono.'</p>
-					<p>Edad:'.$edad.'</p>
-					<p>Sexo:'.$sexo.'<p>
+					'.$user_info.'
 				</li>
-				<li class="menu-item"><p id="almacen-cercano">Almacén recomendado:</p></li>		
+				<li class="menu-item"><a href="'.$orders.'">Historial de compras</a></li>		
 				<li class="menu-item"><a href="'.wp_logout_url().'">Cerrar Sesión</a></li>
 			</ul>
 		</li>';
     }
     elseif (!is_user_logged_in() && $args->theme_location == 'primary') {
-        $items .= '<fb:login-button 
-		scope="public_profile,email"
-		onlogin="checkLoginState();">
-					  </fb:login-button>
-					  <li><a href="'. site_url('wp-login.php') .'">Iniciar Sesión</a></li>';
+        $items .= '<li><a href="'. $myaccount .'">Iniciar Sesión</a></li>';
 	}
 	
+	return $items;
 	
-	function shipping_zones_shortcode() {
+	// function shipping_zones_shortcode() {
 
-		$delivery_zones = WC_Shipping_Zones::get_zones();
+	// 	$delivery_zones = WC_Shipping_Zones::get_zones();
 	
-		foreach ( (array) $delivery_zones as $key => $the_zone ) {
-		  echo ''.$the_zone['zone_name'].', ';
-		  //print_r($delivery_zones);
-		}
-	}
-	 do_shortcode('shipping_zones_shortcode');
+	// 	foreach ( (array) $delivery_zones as $key => $the_zone ) {
+	// 	  echo ''.$the_zone['zone_name'].', ';
+	// 	  //print_r($delivery_zones);
+	// 	}
+	// }
+	//  do_shortcode('shipping_zones_shortcode');
 	//add_shortcode( 'list_shipping_zones', 'shipping_zones_shortcode', 10 );
 
- $location = WC_Geolocation::geolocate_ip();
- $country = $location['country'];
-echo $country;
+$location = WC_Geolocation::geolocate_ip();
+$country = $location['country'];
+ $country;
  // Lets use the country to e.g. echo greetings
   
- switch ($country) {
-     case "IE":
-         $hello = "Howya!";
-         break;
-     case "IN":
-         $hello = "Namaste!";
-         break;
-     default:
-         $hello = "Hello!";
- }
+//  switch ($country) {
+//      case "AR":
+//          $hello = "";
+//          break;
+//      case "IN":
+//          $hello = "Namaste!";
+//          break;
+//      default:
+//          $hello = "Hello!";
+//  }
   
- echo $hello;
+//  echo $hello;
 
-    return $items;
-}
+     
+ }
 
 /*========================================================================================
 				Forzar inicio de sesión en frontend
