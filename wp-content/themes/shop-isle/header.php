@@ -17,7 +17,6 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
 	<?php do_action( 'shop_isle_before_header' ); ?>
 
 	<!-- Preloader -->

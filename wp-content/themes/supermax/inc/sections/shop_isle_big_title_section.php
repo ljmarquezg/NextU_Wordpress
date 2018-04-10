@@ -136,3 +136,8 @@ if ( ( isset( $shop_isle_big_title_hide ) && $shop_isle_big_title_hide != 1 ) ||
 }// End if().
 
 echo '</section >';
+echo '<section class="col-lg-12">';
+echo '<div class="container">';
+echo do_shortcode('[aps-social id="1"]');
+echo '</div>';
+echo '</section>';

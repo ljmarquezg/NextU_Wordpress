@@ -11,12 +11,6 @@ jQuery(window).load(function () {
         //Cambiar el texto del personalizador del tema para seleccionat la categoría a mostrar en los banners
         jQuery('#sub-accordion-section-shop_isle_banners_section .customize-control-title').text('Seleccione categoría a mostrar')
         jQuery('nav.navbar').removeClass('navbar-transparent');
-
-        // jQuery("input[type='radio']").each(function () {
-        //     let label = jQuery(this).siblings("label");
-        //     label.detach();
-        //     jQuery(this).prepend(label)
-        // });
         if (jQuery('input[type="radio"][name^="billing_"]').length > 0) {
             jQuery('input[type="radio"][name^="billing_"]').each(function () {
                 value = jQuery(this).val();
@@ -27,67 +21,19 @@ jQuery(window).load(function () {
             })
         }
 
-    }, 1);
+        if (jQuery('#shop-isle-checkout-coupon').length > 0) {
+            jQuery('#shop-isle-checkout-coupon > .woocommerce-info:first-child').after(jQuery('.woocommerce-form.woocommerce-form-login.login'));
+        }
 
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (objPosition) {
-            var lon = objPosition.coords.longitude;
-            var lat = objPosition.coords.latitude;
-            //calcularDistancia(lon, lat)
-            //var lugares = array(['San Carlos de Bariloche Las Terrazas', -41.13555711387061, -71.2995396])
-        }, function (objPositionError) {
-            switch (objPositionError.code) {
-                case objPositionError.PERMISSION_DENIED:
-                    content.innerHTML = "No se ha permitido el acceso a la posición del usuario.";
-                    break;
-                case objPositionError.POSITION_UNAVAILABLE:
-                    content.innerHTML = "No se ha podido acceder a la información de su posición.";
-                    break;
-                case objPositionError.TIMEOUT:
-                    content.innerHTML = "El servicio ha tardado demasiado tiempo en responder.";
-                    break;
-                default:
-                    content.innerHTML = "Error desconocido.";
+        if (jQuery('.wpgmza_sl_main_div').length > 0) {
+            jQuery('.wpgmza_sl_main_div').addClass('container');
+            jQuery('.wpgmza-form-field').addClass('col-xs-12');
+            if (jQuery('.wpgmza_sl_main_div').length > 0) {
+                jQuery('.wpgmza_sl_main_div').prepend('<div class="container"><div class="col-sm-6 col-sm-offset-3"> <h2 class="module-title font-alt home-prod-title"> Nuestros Almacenes </h2><div class="module-subtitle font-serif home-prod-subtitle">Ubique nuestras tiendas en la ciudad de Bariloche</div> </div>')
             }
-        }, {
-            maximumAge: 75000,
-            timeout: 15000
-        });
-    } else {
-        content.innerHTML = "Su navegador no soporta la API de geolocalización.";
-    };
+            jQuery('#addressInput').val('Bariloche');
+            jQuery('.wpgmza_sl_search_button').addClass('button black');
+        }
 
-
+    }, 1);
 });
-
-
-
-window.fbAsyncInit = function () {
-    FB.init({
-        appId: '1816574748404589',
-        cookie: true,
-        xfbml: true,
-        version: '1.0'
-    });
-
-    FB.AppEvents.logPageView();
-
-};
-
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {
-        return;
-    }
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-
-function checkLoginState() {
-    FB.getLoginStatus(function (response) {
-        statusChangeCallback(response);
-    });
-}

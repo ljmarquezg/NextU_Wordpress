@@ -1482,3 +1482,481 @@ Stack trace:
 #5 {main}
   thrown
 
+2018-04-07T12:38:46+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T13:05:14+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T13:53:05+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T14:59:04+00:00 CRITICAL Uncaught Error: Call to undefined method Hybrid_Error::getApiError() in C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-social-login\includes\services\wsl.authentication.php:1127
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-social-login\includes\services\wsl.authentication.php(225): wsl_process_login_render_error_page(Object(Exception), Array, 'Twitter')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-social-login\includes\services\wsl.authentication.php(131): wsl_process_login_begin()
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wsl_process_login('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#6 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\
+
+2018-04-07T14:59:29+00:00 CRITICAL Uncaught Error: Call to undefined method Hybrid_Error::getApiError() in C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-social-login\includes\services\wsl.authentication.php:1127
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-social-login\includes\services\wsl.authentication.php(225): wsl_process_login_render_error_page(Object(Exception), Array, 'Facebook')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\wordpress-social-login\includes\services\wsl.authentication.php(131): wsl_process_login_begin()
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): wsl_process_login('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#6 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\
+
+2018-04-07T15:14:19+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T15:18:03+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T15:27:59+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T15:41:28+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T15:53:15+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-07T16:05:37+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:05:10+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-08T19:11:56+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:15:16+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:15:33+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:25:44+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:27:16+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:29:35+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:49:14+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:49:27+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:49:53+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T19:50:28+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:08:39+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:08:59+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:21:16+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:21:33+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:23:43+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:24:21+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:30:24+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:35:50+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:39:30+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T20:57:42+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:10:38+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:14:33+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:15:04+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:29:03+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:30:21+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:32:45+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-08T21:33:02+00:00 CRITICAL Uncaught Error: Call to a member function authenticate() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-social-login\includes\class-yith-social-login.php:163
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(286): YITH_WC_Social_Login->get_login_request('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(450): do_action('init')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(89): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-login.php(12): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown
+
+2018-04-09T07:12:09+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:12:13+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:12:14+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:12:20+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:13:20+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:14:13+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:14:14+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:14:20+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:14:51+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-09T07:14:58+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 546506475 bytes)
+
+2018-04-10T07:37:32+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+

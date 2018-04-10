@@ -28,7 +28,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php wc_print_notices(); ?>
 
 <?php do_action( 'woocommerce_before_customer_login_form' ); ?>
-
 <?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
 <div class="col-md-push-3 col-md-6">
 <ul class="nav nav-tabs">
@@ -36,8 +35,8 @@ if ( ! defined( 'ABSPATH' ) ) {
   <li><a data-toggle="tab" href="#register"><?php esc_html_e( 'Register', 'woocommerce' ); ?></a></li>
 </ul>
 
-<!-- <div class="u-columns col-md-6" id="customer_login">
-	<div class="u-column1 col-1"> -->
+ <div class="u-columns col-md-12" id="customer_login">
+	<div class="u-column1 col-1">
 
 
 <div class="tab-content">
@@ -46,11 +45,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php endif; ?>
 
 		<h2><?php esc_html_e( 'Login', 'woocommerce' ); ?></h2>
-
+		
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
-
+		
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
-
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="username"><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?> <span class="required">*</span></label>
 				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
@@ -59,9 +57,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" />
 			</p>
+			
 
 			<?php do_action( 'woocommerce_login_form' ); ?>
-
 			<p class="form-row">
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 				<button type="submit" class="woocommerce-Button button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Login', 'woocommerce' ); ?></button>
@@ -72,7 +70,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<p class="woocommerce-LostPassword lost_password">
 				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>
 			</p>
-
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+			
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
 
 		</form>

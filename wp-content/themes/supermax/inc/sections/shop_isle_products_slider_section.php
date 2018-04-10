@@ -77,6 +77,7 @@ if ( ! empty( $shop_isle_products_slider_title ) ) :
 			),
 		);
 	}
+	
 
 	if ( ! empty( $tax_query_item ) ) {
 		$shop_isle_products_slider_args['tax_query']['relation'] = 'AND';
@@ -99,7 +100,7 @@ if ( ! empty( $shop_isle_products_slider_title ) ) :
 			$number_of_items = apply_filters( 'shop_isle_products_slider_section_items', 4 );
 			$pagination      = apply_filters( 'shop_isle_products_slider_section_pagination', 'true' );
 			$navigation      = apply_filters( 'shop_isle_products_slider_section_navigation', 'true' );
-
+			$link = get_term_link( (int)$shop_isle_products_slider_category, 'product_cat' );
 			echo '<div class="row">';
 			echo '<div class="container">';
 			echo '<div class="supermax-carousel owl-carousel text-center" data-loop="false" data-items="' . esc_attr( $number_of_items ) . '" data-pagination="' . esc_attr( $pagination ) . '" data-navigation="' . esc_attr( $navigation ) . '" data-rtl="' . esc_attr( $rtl_slider ) . '" >';
@@ -124,6 +125,7 @@ if ( ! empty( $shop_isle_products_slider_title ) ) :
 
 			wp_reset_postdata();
 			echo '</div>';
+			echo '<a href="'.$link.'" class="button black" target="_self">Ver todas las '. $shop_isle_products_slider_title .'</a>';
 			echo '</div>';
 			echo '</div>';
 
@@ -161,14 +163,14 @@ else :
 
 		endwhile;
 
+		echo '</div>';	
+		echo '<a href="" class="button" target="_self">Ver todas las '. $shop_isle_products_slider_title .'</a>';
+		echo '</div>';
 		wp_reset_postdata();
-		echo '</div>';
-
-		echo '</div>';
-
 	endif;
 
 endif;
+
 
 echo '</div>';
 

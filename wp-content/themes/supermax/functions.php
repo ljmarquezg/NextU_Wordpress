@@ -12,6 +12,10 @@
 		   require_once dirname( __FILE__ ).'/session-manager.php';
 		   require_once dirname( __FILE__ ).'/products.php';
 	
+		/*=================================================================================
+		   		Incrementar el limite de memoria de Wordpress
+		==================================================================================*/
+		 define( 'WP_MEMORY_LIMIT', '256M' );
 
 	/*==================================================================================
 						Modificar el estilo del shopPage
@@ -215,3 +219,30 @@
 /*==================================================================================================================
 							Agregar campos al fomulario
 		===================================================================================================================*/	  
+		// function social_login(){
+		// 	 echo do_shortcode('[nextend_social_login provider="facebook"]');
+		// 	 echo do_shortcode('[nextend_social_login provider="google"]');
+		// }
+		
+		// add_action( 'woocommerce_after_customer_login_form', social_login() ); ?>
+
+
+	<?php 
+// add_action( 'woocommerce_login_form', 'social_login', 10);
+// add_action('login_form', 'social_login');
+add_action('woocommerce_login_form', 'NextendSocialLogin::addLoginFormButtons');
+add_action('login_form', 'NextendSocialLogin::addLoginFormButtons');
+remove_action('register_form', 'NextendSocialLogin::addLoginFormButtons');
+
+
+add_action('wp_logout','auto_redirect_after_logout');
+function auto_redirect_after_logout(){
+	wp_redirect( home_url() );
+	exit();
+  }
+
+  
+
+  wp_enqueue_script("checkout-js", plugin_dir_url( __FILE__ )."js/checkout.js",array('jquery'),'',true);
+
+  ?>

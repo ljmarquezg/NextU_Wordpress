@@ -6,7 +6,7 @@
  * @subpackage Shop Isle
  */
 ?>
-		<section class="module">
+		<section class="module-small">
 			<div class="container">
 
 				<div class="row">

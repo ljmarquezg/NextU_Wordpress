@@ -26,6 +26,8 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 	$shop_isle_products_title = get_theme_mod( 'shop_isle_products_title' );
 }
 
+$link = get_term_link( (int)$shop_isle_products_slider_category, 'product_cat' );
+
 if ( ! empty( $shop_isle_products_title ) ) :
 	echo '<div class="row">';
 	echo '<div class="col-sm-6 col-sm-offset-3">';
@@ -120,15 +122,17 @@ elseif ( isset( $shop_isle_products_category ) && ! empty( $shop_isle_products_c
 		endwhile;
 		echo '</ul>';
 		echo '</div>';
+		
 		echo '</div>';	
 
 		echo '<div class="row mt-30">';
 		echo '<div class="col-sm-12 align-center">';
-		if ( function_exists( 'wc_get_page_id' ) ) {
-			echo '<a href="' . esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ) . '" class="btn btn-b btn-round">' . apply_filters( 'shop_isle_see_all_products_label', __( 'See all products', 'shop-isle' ) ) . '</a>';
-		} elseif ( function_exists( 'woocommerce_get_page_id' ) ) {
-			echo '<a href="' . esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ) . '" class="btn btn-b btn-round">' . apply_filters( 'shop_isle_see_all_products_label', __( 'See all products', 'shop-isle' ) ) . '</a>';
-		}
+		// if ( function_exists( 'wc_get_page_id' ) ) {
+		// 	echo '<a href="' . esc_url( get_permalink( wc_get_page_id( 'shop' ) ) ) . '" class="btn btn-b btn-round">' . apply_filters( 'shop_isle_see_all_products_label', __( 'See all products', 'shop-isle' ) ) . '</a>';
+		// } elseif ( function_exists( 'woocommerce_get_page_id' ) ) {
+		// 	echo '<a href="' . esc_url( get_permalink( woocommerce_get_page_id( 'shop' ) ) ) . '" class="btn btn-b btn-round">' . apply_filters( 'shop_isle_see_all_products_label', __( 'See all products', 'shop-isle' ) ) . '</a>';
+		// }
+		echo '<a href="'.$link.'" class="button black" target="_self">Ver todas las '. $shop_isle_products_category .'</a>';
 		echo '</div>';
 		echo '</div>';
 
@@ -196,7 +200,7 @@ else :
 	wp_reset_postdata();
 
 endif;
-
+echo '<a href="'.$link.'" class="button black" target="_self">Ver todas las '. $shop_isle_products_title .'</a>';
 echo '</div><!-- .container -->';
 
 echo '</section>';
