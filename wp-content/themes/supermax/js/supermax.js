@@ -28,10 +28,6 @@ jQuery(window).load(function () {
         if (jQuery('.wpgmza_sl_main_div').length > 0) {
             jQuery('.wpgmza_sl_main_div').addClass('container');
             jQuery('.wpgmza-form-field').addClass('col-xs-12');
-            if (jQuery('.wpgmza_sl_main_div').length > 0) {
-                jQuery('.wpgmza_sl_main_div').prepend('<div class="container"><div class="col-sm-6 col-sm-offset-3"> <h2 class="module-title font-alt home-prod-title"> Nuestros Almacenes </h2><div class="module-subtitle font-serif home-prod-subtitle">Ubique nuestras tiendas en la ciudad de Bariloche</div> </div>')
-            }
-            jQuery('#addressInput').val('Bariloche');
             jQuery('.wpgmza_sl_search_button').addClass('button black');
         }
 

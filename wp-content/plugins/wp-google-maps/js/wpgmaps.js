@@ -259,14 +259,29 @@ MYMAP.init = function(selector, latLng, zoom) {
     
 	if(window.wpgmza_circle_data_array) {
 		window.circle_array = [];
-		for(var circle_id in wpgmza_circle_data_array)
+		
+		for(var circle_id in wpgmza_circle_data_array) {
+			
+			// Check that this belongs to the array itself, as opposed to its prototype, or else this will break if you add methods to the array prototype (please don't extend the native types)
+			if(!wpgmza_circle_data_array.hasOwnProperty(circle_id))
+				continue;
+			
 			add_circle(1, wpgmza_circle_data_array[circle_id]);
+		}
 	}
 	
 	if(window.wpgmza_rectangle_data_array) {
 		window.rectangle_array = [];
-		for(var rectangle_id in wpgmza_rectangle_data_array)
+		
+		for(var rectangle_id in wpgmza_rectangle_data_array) {
+			
+			// Check that this belongs to the array itself, as opposed to its prototype, or else this will break if you add methods to the array prototype (please don't extend the native types)
+			if(!wpgmza_rectangle_data_array.hasOwnProperty(rectangle_id))
+				continue;
+			
 			add_rectangle(1, wpgmza_rectangle_data_array[rectangle_id]);
+			
+		}
 	}
 
     google.maps.event.addListener(MYMAP.map, 'click', function() {
@@ -1235,6 +1250,10 @@ function add_circle(mapid, data)
 	data.map = MYMAP.map;
 	
 	if(!(data.center instanceof google.maps.LatLng)) {
+		
+		if(typeof data.center != "string")
+			return;
+		
 		var m = data.center.match(/-?\d+(\.\d*)?/g);
 		data.center = new google.maps.LatLng({
 			lat: parseFloat(m[0]),

@@ -1960,3 +1960,61 @@ Stack trace:
 
 2018-04-10T07:37:32+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
 
+2018-04-11T17:26:57+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T17:26:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T17:26:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T17:26:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T17:26:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T17:26:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T21:18:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-11T21:18:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-12T13:05:47+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-12T13:08:32+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\xampp\htdocs\wordpress\wp-content\themes\supermax\inc\sections\shop_isle_big_title_section.php:64
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-content\themes\supermax\front-page.php(13): load_template('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown
+
+2018-04-13T06:59:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-13T07:00:13+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-13T12:38:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-13T12:38:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-13T12:38:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-16T08:57:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-16T08:57:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-16T08:57:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-16T08:57:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-16T08:57:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+
+2018-04-16T08:57:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded
+

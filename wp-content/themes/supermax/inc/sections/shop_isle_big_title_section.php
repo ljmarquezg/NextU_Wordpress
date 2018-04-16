@@ -53,25 +53,17 @@ if ( ( isset( $shop_isle_big_title_hide ) && $shop_isle_big_title_hide != 1 ) ||
 			echo '</div><!-- .hs-caption -->';
 
 			echo '</li><!-- .bg-dark -->';
-
-		$args = array(
-			'posts_per_page' => -1,
-			'product_cat' => 'ofertas-diarias',
-			'post_type' => 'product',
-			'orderby' => 'random',
+			//Enviar como argumento la categoría que coincida con el slug "Ofertas-diarias" y limitar a 4 productos de manera aleatoria
+			$args = array(
+				'posts_per_page' => 4,
+				'product_cat' => 'ofertas-diarias',
+				'post_type' => 'product',
+				'orderby'   => 'rand',
 			);
 			$the_query = new WP_Query( $args );
-
-
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 			global $product;
-			$count = 1;
-			if ($count < 4) :
-			foreach ($product->category_ids as $key => $cat_id) :
-				//Obtener las categorías a las que pertenece el producto.
 				$category = get_term_by('id', $cat_id, 'product_cat', 'ARRAY_A');
-				//Verificar que coincida con la categoría a filtrar
-				if ($category['name'] === 'Ofertas Diarias'):
 				//Condiciona que el producto esté en oferta y no se hayan definido períodos de la oferta
 					if ( $product->is_on_sale() ) :
 						$product->name;
@@ -116,14 +108,8 @@ if ( ( isset( $shop_isle_big_title_hide ) && $shop_isle_big_title_hide != 1 ) ||
 						echo '</li>';
 	
 					}// End if().
-				// }// End foreach().
-
-				endif;
 				$count++;
-				endforeach;
-			endif;
-
-				
+			
 			endwhile;
 
 			echo '</ul><!-- .slides -->';
@@ -131,7 +117,6 @@ if ( ( isset( $shop_isle_big_title_hide ) && $shop_isle_big_title_hide != 1 ) ||
 			echo '</div><!-- .hero-slider -->';
 
 
-		// }
 	}// End if().
 }// End if().
 

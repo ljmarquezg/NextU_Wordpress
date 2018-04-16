@@ -91,6 +91,11 @@ ul.products li.product .product-button-wrap .product_type_variable {
     width: 100%;
 }
 
+body.admin-bar .navbar.navbar-scroll-point.navbar-fixed-top .navbar-collapse {
+    max-height: 450px;
+    margin-top: 0;
+}
+
 .navbar-custom .nav>li>a:focus,
 .navbar-custom .nav>li>a:hover,
 .navbar-custom .nav .open>a,
@@ -109,6 +114,11 @@ ul.products li.product .product-button-wrap .product_type_variable {
     color: #999;
     letter-spacing: 2px;
     margin: 0;
+}
+
+li>ul.sub-menu>li>p.dropdownmenu {
+    right: 11px;
+    /* background: orange; */
 }
 
 /*Headers*/
@@ -159,7 +169,9 @@ ul.products li.product .product-button-wrap .product_type_variable {
 }
 
 .sidebar-shop {
-    padding-top: 0 !important;
+    background-color: #c5c5c5;
+    margin-left: -15px;
+    padding-bottom: 30px;
 }
 
 .yith-woocompare-widget ul li:before {

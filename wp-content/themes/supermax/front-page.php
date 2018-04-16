@@ -34,12 +34,6 @@ if ( defined( 'WCCM_VERISON' ) ) {
 
 }
 
-// // /******* Slider Section */
-// //$products_slider = get_template_directory() . '/inc/sections/shop_isle_products_slider_section.php';
-// $slider = dirname( __FILE__ ) .'/inc/sections/shop_isle_slider_section.php';
-// require_once( $slider );
-
-
 /******* Products Slider Section - Ofertas Diarias*/
 // $products_slider = get_template_directory() . '/inc/sections/shop_isle_products_slider_section.php';
 $products_slider = dirname( __FILE__ ) .'/inc/sections/shop_isle_products_slider_section.php';
@@ -86,7 +80,10 @@ if ( in_array( $required_plugin , $plugins ) ) {
 // Plugin que deseamos comprobar
 $required_plugin = 'wp-google-maps/wpGoogleMaps.php';
 if ( in_array( $required_plugin , $plugins ) ) {
-	 echo '<row>';
+	?>
+	<h2 class="module-title font-alt home-prod-title">Nuestros Almacenes </h2>
+	<div class="module-subtitle font-serif home-prod-subtitle">Ubique nuestras tiendas en la ciudad de Bariloche</div>
+	<?php echo '<row>';
 	 	echo do_shortcode( '[wpgmza id="1"]' );
 	 echo '</row>';
 	}?>

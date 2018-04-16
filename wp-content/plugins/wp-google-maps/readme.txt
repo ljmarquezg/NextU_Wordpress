@@ -1,10 +1,9 @@
 === WP Google Maps ===
 Contributors: WPGMaps, NickDuncan, CodeCabin_, DylanAuty
-Donate link: https://www.wpgmaps.com
+Donate link: http://www.wpgmaps.com
 Tags: google maps, maps, map, map markers, google map, google maps plugin, wp google maps, wp google map, map plugin, directions, google map plugin, map widget
 Requires at least: 3.5
-Tested up to: 4.9
-Requires PHP: 5.3
+Tested up to: 4.9.1
 Stable tag: trunk
 License: GPLv2
 
@@ -16,7 +15,7 @@ The easiest to use Google maps plugin! Add a customized Google map to your WordP
 
 While the free version of WP Google Maps allows you to create a Google map with as many markers as you like, the Pro version allows you to do so much more! 
 
-The [WP Google Maps Pro Version](https://www.wpgmaps.com/purchase-professional-version/) version allows you create custom Google maps with high quality markers containing locations, descriptions, images, categories, links and directions. 
+The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-version/) version allows you create custom Google maps with high quality markers containing locations, descriptions, images, categories, links and directions. 
 
 = Lite Version (Free) =
 * The most popular Google Maps plugin on WordPress
@@ -41,32 +40,27 @@ The [WP Google Maps Pro Version](https://www.wpgmaps.com/purchase-professional-v
 * Add Polylines / Routes to your map
 * Create a map in less than a 30 seconds!
 * Right click to add a marker to your Google map
-* Enable or disable Points of Interest (POI)
 * No advertising or links
 * Google Maps Autocomplete
 * Google Maps Transport Layer
 * Set the max zoom level for your map
 * Serve your map marker data via your database or an XML file
 * Compatible with caching plugins
-* Compatible with Cloudflare
-* Latest Google Maps API (V3.30, V3.31 & V3.exp)
+* Compatible with Cloudfare
+* Latest Google Maps API (V3.23, V3.24 & V3.exp)
 
 = Professional Edition =
 * Create multiple Google maps!
 * Allow your visitors to get directions to your markers.
 * Add descriptions, links and images to your map markers.
 * Add categories to your map markers
-* Add custom fields to your map markers
-* Filter markers by category or custom fields
+* Filter markers by category
 * Mashup multiple Google maps
 * Add different marker icons, or your own icons to make your map really stand out!
-* Choose from 1000s of modern and beautiful marker icons with [Mappity](https://www.mappity.org)
 * List your Google Map markers in the four ways; basic list, basic table, carousel, advanced table
 * Allow visitors to use their map location as the starting or ending point for the directions
 * Choose between the Default Google Maps Infowindow and the new Modern Infowindow
 * Export/Import your markers to a CSV file for quick editing.
-* Schedule imports at regular intervals
-* Import via CSV, REST API, XML, KML and JSON
 * Link Fusion tables to your Google Maps
 * Show your visitor's location on the Map
 * Import KML/KMZ files to your Google Map
@@ -78,7 +72,7 @@ The [WP Google Maps Pro Version](https://www.wpgmaps.com/purchase-professional-v
 * Multiple map widget functionality
 * Add retina-ready map marker icons
 * WordPress Network friendly
-* Get the [WP Google Maps Professional Edition](https://www.wpgmaps.com/purchase-professional-version/) for only $39.99
+* Get the [WP Google Maps Professional Edition](http://www.wpgmaps.com/purchase-professional-version/) for only $39.99
 
 
 = Translations =
@@ -113,39 +107,39 @@ Get a free copy of the WP Google Maps Pro version in exchange for translating ou
 = Demos =
 WP Google Maps Lite
 
-* [Basic Google Map with Markers](https://www.wpgmaps.com/demo/basic-google-map-with-markers/)
-* [Store Locator](https://www.wpgmaps.com/demo/wp-google-maps-store-locator-free-version/)
-* [Polygons & Polyines/Routes](https://www.wpgmaps.com/demo/polygons-and-polylines/)
-* [Google Maps Transit Layer](https://www.wpgmaps.com/demo/google-maps-transit-layer/)
-* [Google Maps Traffic Layer](https://www.wpgmaps.com/demo/google-maps-traffic-layer/)
-* [Google Maps Bicycle Layer](https://www.wpgmaps.com/demo/google-maps-bicycle-layer/)
+* [Basic Google Map with Markers](http://www.wpgmaps.com/demo/basic-google-map-with-markers/)
+* [Store Locator](http://www.wpgmaps.com/demo/wp-google-maps-store-locator-free-version/)
+* [Polygons & Polyines/Routes](http://www.wpgmaps.com/demo/polygons-and-polylines/)
+* [Google Maps Transit Layer](http://www.wpgmaps.com/demo/google-maps-transit-layer/)
+* [Google Maps Traffic Layer](http://www.wpgmaps.com/demo/google-maps-traffic-layer/)
+* [Google Maps Bicycle Layer](http://www.wpgmaps.com/demo/google-maps-bicycle-layer/)
 
 WP Google Maps Pro
 
-* [Google map with advanced markers](https://www.wpgmaps.com/demo/basic-map-and-markers/)
-* [Marker listings - Simple](https://www.wpgmaps.com/demo/list-markers/)
-* [Marker listings - Advanced](https://www.wpgmaps.com/demo/map-with-markers-listed-below-advanced/)
-* [Google Maps Directions](https://www.wpgmaps.com/demo/directions/)
-* [Resposive Map](https://www.wpgmaps.com/demo/responsive-maps/)
-* [Marker Categories](https://www.wpgmaps.com/demo/marker-categories/) (Filtering)
-* [Advanced Store Locator](https://www.wpgmaps.com/demo/store-locator/)
-* [WP Google Maps Editor](https://www.wpgmaps.com/demo/screenshots-back-end/) (Back-end Screenshots)
-* [Visitor Generated Markers](https://www.wpgmaps.com/demo/visitor-generated-markers/) - (WP Google Maps VGM Add-on)
-* [Custom Map Styling](https://www.wpgmaps.com/demo/custom-map-styling/) (WP Google Maps Gold Add-on)
+* [Google map with advanced markers](http://www.wpgmaps.com/demo/basic-map-and-markers/)
+* [Marker listings - Simple](http://www.wpgmaps.com/demo/list-markers/)
+* [Marker listings - Advanced](http://www.wpgmaps.com/demo/map-with-markers-listed-below-advanced/)
+* [Google Maps Directions](http://www.wpgmaps.com/demo/directions/)
+* [Resposive Map](http://www.wpgmaps.com/demo/responsive-maps/)
+* [Marker Categories](http://www.wpgmaps.com/demo/marker-categories/) (Filtering)
+* [Advanced Store Locator](http://www.wpgmaps.com/demo/store-locator/)
+* [WP Google Maps Editor](http://www.wpgmaps.com/demo/screenshots-back-end/) (Back-end Screenshots)
+* [Visitor Generated Markers](http://www.wpgmaps.com/demo/visitor-generated-markers/) - (WP Google Maps VGM Add-on)
+* [Custom Map Styling](http://www.wpgmaps.com/demo/custom-map-styling/) (WP Google Maps Gold Add-on)
 
 = Documentation =
-* [Installing WP Google Maps](https://www.wpgmaps.com/documentation/installing-the-plugin/)
-* [Creating your first map](https://www.wpgmaps.com/documentation/creating-your-first-map/)
-* [Google Maps mashup (Pro)](https://www.wpgmaps.com/documentation/advanced-map-options/map-mashup/)
-* [Exporting and importing map markers (Pro)](https://www.wpgmaps.com/documentation/exporting-and-importing-your-markers/)
-* [Changing the Google Maps language](https://www.wpgmaps.com/documentation/changing-the-google-maps-language/)
-* [Create a google map and marker using custom fields (Pro)](https://www.wpgmaps.com/introducing-maps-by-custom-fields/)
-* [View all documentation](https://www.wpgmaps.com/documentation/)
+* [Installing WP Google Maps](http://www.wpgmaps.com/documentation/installing-the-plugin/)
+* [Creating your first map](http://www.wpgmaps.com/documentation/creating-your-first-map/)
+* [Google Maps mashup (Pro)](http://www.wpgmaps.com/documentation/advanced-map-options/map-mashup/)
+* [Exporting and importing map markers (Pro)](http://www.wpgmaps.com/documentation/exporting-and-importing-your-markers/)
+* [Changing the Google Maps language](http://www.wpgmaps.com/documentation/changing-the-google-maps-language/)
+* [Create a google map and marker using custom fields (Pro)](http://www.wpgmaps.com/introducing-maps-by-custom-fields/)
+* [View all documentation](http://www.wpgmaps.com/documentation/)
 
 = Troubleshooting =
-* [My Google Map is not showing on my website](https://www.wpgmaps.com/documentation/troubleshooting/my-map-is-not-showing-on-my-website/)
-* [My markers are not showing](https://www.wpgmaps.com/documentation/troubleshooting/my-markers-are-not-showing-on-my-map/)
-* [View all troubleshooting articles](https://www.wpgmaps.com/documentation/troubleshooting/)
+* [My Google Map is not showing on my website](http://www.wpgmaps.com/documentation/troubleshooting/my-map-is-not-showing-on-my-website/)
+* [My markers are not showing](http://www.wpgmaps.com/documentation/troubleshooting/my-markers-are-not-showing-on-my-map/)
+* [View all troubleshooting articles](http://www.wpgmaps.com/documentation/troubleshooting/)
 
 == Installation ==
 
@@ -165,7 +159,7 @@ In order to make use of WP Google Maps Store Locator functionality, simply click
 == Frequently Asked Questions ==
 
 = How do I get WP Google Maps Pro? =
-Simply visit https://www.wpgmaps.com and purchase the WP Google Maps Professional Edition for $39.99 once off. Free updates and support included forever.
+Simply visit http://www.wpgmaps.com and purchase the WP Google Maps Professional Edition for $39.99 once off. Free updates and support included forever.
 
 = I've installed the plugin, now what? =
 Once installed and activated, a link should appear in your left navigation panel within your WP-ADMIN section. Click on the "WP Google Maps" link and follow the on screen instructions.
@@ -200,9 +194,6 @@ Try [Nifty Maps](http://www.niftymaps.co) - Comprehensive Map Builder for all we
 
 == Upgrade Notice ==
 
-= 6.4.10 =
-Please update your WP Google Maps version to 6.4.10 to ensure you are using the latest security enhancements.
-
 = 6.3.15 =
 Please update your WP Google Maps version to 6.3.15 to ensure you are using the latest security enhancements.
 
@@ -212,42 +203,38 @@ Please update your WP Google Maps version to 6.3.14 to ensure you are using the 
 = 6.2.1 =
 Please update your WP Google Maps version to 6.2.1 to ensure you are using the latest security enhancements.
 
+= 6.1.10 =
+Please update WP Google Maps to version 6.1.10 to enable our latest security enhancements.
+
+= 6.1.5 =
+We no longer support timthumb and we have opted to remove it from WP Google Maps. Please update to 6.1.5 to ensure the removal of the timthumb script.
+
+= 6.0.27 =
+Please upgrade your version of WP Google Maps to version 6.0.27 as it includes multiple security improvements.
+
 == Changelog ==
 
-= 7.0.00 - 2018-04-04 - High priority =
-* Added circle and rectangle functionality
+= 7.0.02 - 2018-04-15 =
+* Added option to select FontAwesome version
+* Fixed bug with circle data array
+
+= 7.0.01 - 2018-04-11 - Medium Priority =
+* Switched to WebFont / CSS FontAwesome 5 for compatibility reasons
+* Fixed JS error in for ... in loop when adding methods to Array prototype
+* Fixed FontAwesome CSS being enqueued as script
+* Added functionality to fit map to bounds when editing shapes
+
+= 7.0.00 - 2018-04-04 =
 * Added arbitrary radii control to Maps -> Settings -> Store Locator
 * Added modern store locator look and feel
 * Added modern store locator radius
 * Added custom JS field in Maps -> Settings -> Advanced
-* Added spatial types to marker table - performance improvements to page load speed
+* Added spatial types to marker table
 * Added Google API Error handler and alert
 * Added code to display custom fields in infowindow when Pro is installed
 * Fresh install "My First Map" defaults to modern store locator and radius
 * Relaxed theme data parsing
-* Disabled Street View, zoom controls, pan controls and map type controls on fresh installs for a more modern look
-* Option for disabling two-finger panning
-* Refactored JS code
-
-= 6.4.11 - 2018-03-19 - Low priority =
-* Added a missing marker PNG file
-
-= 6.4.10 - 2018-03-12 - High priority =
-* XSS vulnerability fixed. Ouch! (thank you Luigi Gubello)
-* Backend UI enhancements such as "select all markers" and  "delete all markers"
-* Frontend UX improvements (Esc to close infofindow, better jQuery checks, etc.)
-* Neatened up and modified the front end JS
-* New feature: Enable/disable InfoWindows
-* New feature: Show/hide points of interest
-* Paving the way for WP Google Maps version 7!
-* Updated Polish translations (Thank you Wojciech Dorosz)
-* Fixed Norwegian translations (Thank you Kristoffer Gressli)
-* Added support for themes that use FastClick
-* Fixed a bug with "Editor" access roles
-* Updated the default marker to the new Google Maps retina-ready marker
-
-= 6.4.09 - 2018-01-15 - Medium priority =
-* Removed the plugin deactivation survey as there are PHP compatibility issues. Will have to retest and add this back at a later stage.
+* Disabled Street View, zoom controls, pan controls and map type controls on fresh installs
 
 = 6.4.08 - 2018-01-14 - Medium priority =
 * Update Google Maps API versions to include 3.30 and 3.31

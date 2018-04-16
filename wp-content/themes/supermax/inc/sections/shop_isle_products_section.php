@@ -26,7 +26,6 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 	$shop_isle_products_title = get_theme_mod( 'shop_isle_products_title' );
 }
 
-$link = get_term_link( (int)$shop_isle_products_slider_category, 'product_cat' );
 
 if ( ! empty( $shop_isle_products_title ) ) :
 	echo '<div class="row">';
@@ -45,6 +44,7 @@ endif;
 $shop_isle_products_shortcode = get_theme_mod( 'shop_isle_products_shortcode' );
 $shop_isle_products_category  = get_theme_mod( 'shop_isle_products_category' );
 
+$link = get_term_link( (int)$shop_isle_products_category, 'product_cat' );
 
 $tax_query_item  = array();
 $meta_query_item = array();
@@ -98,6 +98,7 @@ if ( ! empty( $meta_query_item ) ) {
 if ( isset( $shop_isle_products_shortcode ) && ! empty( $shop_isle_products_shortcode ) ) :
 	echo '<div class="products_shortcode">';
 	echo do_shortcode( $shop_isle_products_shortcode );
+	echo'<div class="row mt-30"><div class="col-sm-12 align-center"><a href="https://localhost/wordpress/categoria-producto/ofertas-semanales" class="button black" target="_self">Ver todas las Ofertas Semanales</a></div></div>';
 	echo '</div>';
 
 	/* Products from category */
@@ -200,7 +201,9 @@ else :
 	wp_reset_postdata();
 
 endif;
-echo '<a href="'.$link.'" class="button black" target="_self">Ver todas las '. $shop_isle_products_title .'</a>';
+if (!isset($link)):
+	echo '<a href="'.$link.'" class="button black" target="_self">Ver todas las '. $shop_isle_products_title .'</a>';
+endif;
 echo '</div><!-- .container -->';
 
 echo '</section>';

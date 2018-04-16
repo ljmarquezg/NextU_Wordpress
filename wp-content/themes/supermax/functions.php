@@ -12,10 +12,38 @@
 		   require_once dirname( __FILE__ ).'/session-manager.php';
 		   require_once dirname( __FILE__ ).'/products.php';
 	
-		/*=================================================================================
-		   		Incrementar el limite de memoria de Wordpress
-		==================================================================================*/
-		 define( 'WP_MEMORY_LIMIT', '256M' );
+	/*=================================================================================
+			Incrementar el limite de memoria de Wordpress
+	==================================================================================*/
+		define( 'WP_MEMORY_LIMIT', '256M' );
+
+	/*==================================================================================================================
+								Formulario de Inicio de sesión
+	===================================================================================================================*/	  
+	//------------------------ Reemplazar la página wp-login por "Mi Cuenta" ----------------------------------------------------
+	// add_action('init','redirect_wplogin');
+	// 	function redirect_wplogin(){
+	// 		$myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
+	// 		$login_url = wp_logout_url( get_permalink( $myaccount_page_id ) );
+	// 		$login_url = str_replace( 'http:', 'https:', $login_url );
+	// 		global $pagenow;
+	// 		if( 'wp-login.php' == $pagenow && !is_user_logged_in()) {
+	// 			wp_redirect($login_url);
+	// 			exit();
+	// 		}
+	// 	}
+	//------------------------ Redireccionar a página de inicio luego de cerrar sesión ----------------------------------------------------
+		add_action('wp_logout','auto_redirect_after_logout');
+		function auto_redirect_after_logout(){
+			wp_redirect( home_url() );
+			exit();
+		}
+
+	//------------------------  Agregar campos de redes sociales al fomulario --------------------------------------
+		add_action('woocommerce_login_form', 'NextendSocialLogin::addLoginFormButtons');
+		add_action('login_form', 'NextendSocialLogin::addLoginFormButtons');
+		remove_action('register_form', 'NextendSocialLogin::addLoginFormButtons');
+
 
 	/*==================================================================================
 						Modificar el estilo del shopPage
@@ -59,8 +87,8 @@
 	}	
 
 
-	add_filter('woocommerce_sale_flash', 'show_discount_ammpunt', 10, 3);
-	function show_discount_ammpunt($content, $post, $product){
+	add_filter('woocommerce_sale_flash', 'show_discount_ammount', 10, 3);
+	function show_discount_ammount($content, $post, $product){
 		if ($product->is_on_sale() && $product->product_type == 'variable') :
 			$available_variations = $product->get_available_variations();								
 		   $maximumper = 0;
@@ -82,41 +110,40 @@
 
 
 <?php
-		/*=======================================================================================
-				Mostrar la descripción del producto en la tienda
-		=========================================================================================*/
+	/*=======================================================================================
+			Mostrar la descripción del producto en la tienda
+	=========================================================================================*/
 
-		function descripcion_corta($limit, $texto) {
-			$excerpt = explode(' ', $texto, $limit);
-			if (count($excerpt)>=$limit) {
+	function descripcion_corta($limit, $texto) {
+		$excerpt = explode(' ', $texto, $limit);
+		if (count($excerpt)>=$limit) {
 			array_pop($excerpt);
 			$excerpt = implode(" ",$excerpt).'...';
-			} else {
+		} else {
 			$excerpt = implode(" ",$excerpt);
-			}
+		}
 			$excerpt = preg_replace('`[[^]]*]`','',$excerpt);
 			return $excerpt;
-		  }
+		}
 
 
-		function add_product_description() {
-			global $product;
-			?>
-		
+	function add_product_description() {
+		global $product;
+	?>
 		<div class="woocommerce-product-details__short-description product-excerpt">
 				<p><?php echo descripcion_corta(10, get_the_excerpt()); ?>	</p>
 		</div>
-		<?php
+	<?php
 		}
 
 		add_action( 'woocommerce_after_shop_loop_item_title', 'add_product_description', 4 );
-		?>
-		
-		
-		<?php
-		/*=======================================================================================
-				Mostrar Imagen + Título + Descripción Rápida + Valor del producto en carrito 
-		=========================================================================================*/
+	?>
+	
+	
+	<?php
+	/*=======================================================================================
+			Mostrar Imagen + Título + Descripción Rápida + Valor del producto en carrito 
+	=========================================================================================*/
 		add_filter( 'woocommerce_cart_item_name', 'add_excerpt_in_cart_item_name', 10, 3 );
 		
 		function add_excerpt_in_cart_item_name( $item_name,  $cart_item,  $cart_item_key ){
@@ -125,9 +152,8 @@
 				<p name="short-description">'.$excerpt.'</p>';
 			return $item_name . $excerpt_html;
 		}
-		?>
-
-			
+	?>
+	
 
 <?php 
 
@@ -216,33 +242,5 @@
 
 
 <?php
-/*==================================================================================================================
-							Agregar campos al fomulario
-		===================================================================================================================*/	  
-		// function social_login(){
-		// 	 echo do_shortcode('[nextend_social_login provider="facebook"]');
-		// 	 echo do_shortcode('[nextend_social_login provider="google"]');
-		// }
-		
-		// add_action( 'woocommerce_after_customer_login_form', social_login() ); ?>
-
-
-	<?php 
-// add_action( 'woocommerce_login_form', 'social_login', 10);
-// add_action('login_form', 'social_login');
-add_action('woocommerce_login_form', 'NextendSocialLogin::addLoginFormButtons');
-add_action('login_form', 'NextendSocialLogin::addLoginFormButtons');
-remove_action('register_form', 'NextendSocialLogin::addLoginFormButtons');
-
-
-add_action('wp_logout','auto_redirect_after_logout');
-function auto_redirect_after_logout(){
-	wp_redirect( home_url() );
-	exit();
-  }
-
-  
-
   wp_enqueue_script("checkout-js", plugin_dir_url( __FILE__ )."js/checkout.js",array('jquery'),'',true);
-
   ?>
